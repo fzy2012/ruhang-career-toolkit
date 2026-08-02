@@ -2,16 +2,20 @@
 
 [中文](./README.zh.md) · **English**
 
-# 🧰 Offer Toolkit
+# 🧰 Ruhang Career Toolkit
 
 ---
 
-**Three job-hunt tools in one agent skill pack — JD · Resume · BQ.**
+**Three job-hunt tools in one local-first agent skill pack — JD · Resume · BQ.**
+
+> Ruhang365 adaptation: the open Core for [Ruhang Lab](https://rhzl.ruhang365.cn/tools/lab/career-toolkit), with stage routing, clearer privacy boundaries, and RHZL task handoff guidance. The three child skills, templates, and report specifications come from [yanliudesign/offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) under the MIT License with attribution preserved. See [NOTICE.md](NOTICE.md).
+
+> Match scores, interview probabilities, and compensation assessments are heuristics. They do not represent an employer decision or guarantee an interview or offer.
 
 [![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
 [![Skills](https://img.shields.io/badge/SKILLS-3-2ea44f?style=flat-square&labelColor=333)]()
-[![Stars](https://img.shields.io/github/stars/yanliudesign/offer-toolkit-skill?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/offer-toolkit-skill/stargazers)
+[![Stars](https://img.shields.io/github/stars/fzy2012/ruhang-career-toolkit?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/fzy2012/ruhang-career-toolkit/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
 [![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
@@ -71,11 +75,11 @@ Three job-hunting tools bundled as an agent skill pack. Use the whole thing, or 
 
 ## Install
 
-Drop the whole `offer-toolkit-skill/` folder into your skills directory (e.g. `~/.claude/skills/` or VS Code's prompts folder). All three sub-skills get picked up.
+Drop the whole `ruhang-career-toolkit/` folder into your skills directory (e.g. `~/.claude/skills/` or VS Code's prompts folder). All three sub-skills get picked up.
 
 Only want one? Copy just that sub-folder — each one is self-contained.
 
-> 🔒 **Your data stays on your machine.** JDs, resumes, and stories are read by the model in the moment and written back to your local disk — nothing gets shipped to a server or trained on.
+> 🔒 **Ruhang365 does not receive these materials.** Generated files stay in the local directory you choose. Your current agent, model, and provider may still process the content, so their privacy terms also apply.
 
 ### Try it in 30 seconds
 
@@ -99,7 +103,7 @@ The router picks the right sub-skill. You get an HTML report / resume / story ba
 ## Layout
 
 ```
-offer-toolkit-skill/
+ruhang-career-toolkit/
 ├── SKILL.md                        # Router: intent → sub-skill
 ├── README.md / README.zh.md
 ├── LICENSE                         # MIT

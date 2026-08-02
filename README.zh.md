@@ -2,16 +2,20 @@
 
 **中文** · [English](./README.md)
 
-# 🧰 Offer Toolkit
+# 🧰 入行 Career Toolkit
 
 ---
 
-**三个求职工具打包成一个 agent skill 包 — JD · Resume · BQ。**
+**三个求职工具打包成一个本地优先的 agent skill 包 — JD · Resume · BQ。**
+
+> 入行365适配版：作为[入行实验室](https://rhzl.ruhang365.cn/tools/lab/career-toolkit)的开源 Core，新增阶段路由、隐私边界和入行之路任务承接说明。三个子 Skill、模板与报告规范来自 [yanliudesign/offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)，依据 MIT 协议使用并保留作者署名；详见 [NOTICE.md](NOTICE.md)。
+
+> 匹配度、面试概率和薪资判断是启发式分析，不代表招聘方结论，也不保证获得面试或 Offer。
 
 [![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
 [![Skills](https://img.shields.io/badge/SKILLS-3-2ea44f?style=flat-square&labelColor=333)]()
-[![Stars](https://img.shields.io/github/stars/yanliudesign/offer-toolkit-skill?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/offer-toolkit-skill/stargazers)
+[![Stars](https://img.shields.io/github/stars/fzy2012/ruhang-career-toolkit?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/fzy2012/ruhang-career-toolkit/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
 [![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
@@ -71,11 +75,11 @@
 
 ## 安装
 
-把整个 `offer-toolkit-skill/` 目录放进你的 skill 目录（例如 `~/.claude/skills/` 或 VS Code 的 prompts 目录）。三个子 skill 会一起被发现。
+把整个 `ruhang-career-toolkit/` 目录放进你的 skill 目录（例如 `~/.claude/skills/` 或 VS Code 的 prompts 目录）。三个子 skill 会一起被发现。
 
 只想装一个？把对应子目录（如 `resume-skill/`）单独复制过去，每个都自包含。
 
-> 🔒 **你的数据不出本机。**JD、简历、职业故事都只在当下被模型读一遍，结果写回你本地磁盘——不上传服务器、不参与训练。
+> 🔒 **入行365不接收这些材料。**生成文件默认只写入你选择的本地目录；材料内容仍会由你当前使用的 Agent、模型及其服务商处理，请同时遵守所用服务的隐私政策。
 
 ### 30 秒上手
 
@@ -99,7 +103,7 @@
 ## 目录结构
 
 ```
-offer-toolkit-skill/
+ruhang-career-toolkit/
 ├── SKILL.md                        # 路由：意图 → 子 skill
 ├── README.md / README.zh.md
 ├── LICENSE                         # MIT

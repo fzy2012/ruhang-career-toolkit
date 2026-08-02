@@ -1,94 +1,47 @@
 ---
-name: offer-toolkit-skill
-description: "求职工具包。把「看到心动岗位 → 拿到 offer」拆成三个独立子 skill：① Job Description Skill 解码 JD 并出一份 Offer Strategy Report（该不该投 / 匹配度 / 面试题预测），② Resume Skill 把简历结构化并渲染成 11 套打印级模板，③ BQ Skill 挖掘真实经历、STAR 化，建可复用的行为面试故事库。任何求职相关请求（该不该投、改简历、准备行为面试、看 JD、Tell me about a time…）都从这里进，再路由到对应子 skill。关键词：求职, offer, career, job hunt, JD, job description, 简历, resume, CV, 行为面试, behavioral interview, BQ, STAR, tell me about a time, 面试准备。"
+name: ruhang-career-toolkit
+description: "入行365求职工具包。按用户当前阶段路由到 JD 解码、简历优化或行为面试三个子 Skill，产出岗位判断报告、真实简历材料或可复用故事库。适用于求职、转型、岗位分析、简历、CV、Resume、面试、BQ、STAR、Offer Strategy 等请求；不承诺 Offer，不杜撰经历，匹配度与面试概率只作为启发式判断。"
 ---
 
-# Offer Toolkit
+# 入行 Career Toolkit
 
-一整套求职 skill 的聚合入口。三条子 skill 各自独立可用，也可以组成完整的求职链路：
+这是入行实验室的开源求职工作台。它不在网页里接收简历，而是在用户选择的 Agent 工作区中，把求职链路分成三个可独立执行的阶段：
 
-```
-看到心动岗位 → [Job Description Skill] 解码 JD · 出 Offer Strategy Report
-                    ↓ 决定投
-              [Resume Skill] tailor + 美化 · 11 套模板 · 单文件 HTML
-                    ↓ 拿到面试
-              [BQ Skill] 挖故事 · 建故事库 · STAR 化 · 模拟面试
+```text
+看到目标岗位 → JD 解码与投递判断 → 简历定向优化 → 行为面试故事库
 ```
 
-**顶层原则（三条子 skill 共用）：**
+## 先确认当前阶段
 
-1. **绝不杜撰。** 所有经历、职责、数字都必须来自用户真实提供的内容。可以引导、追问、把弱的改强，绝不编公司、职位、成果、量化数字。
-2. **一次只问一个问题。** 挖掘 / 建简历 / 准备 BQ 都是对话，不是问卷。
-3. **先结构化，再产出。** 无论是简历还是故事，先落到标准数据模型，确认无误再渲染 HTML / 生成答案。
+只根据用户已经提供的信息判断，不确定时一次只问一个问题：
 
----
+> 你现在最需要完成哪一步：判断一个岗位、改一份简历，还是准备面试？
 
-## 路由：用户进来先判断意图
-
-| 用户说的话 | 走哪个子 skill |
+| 当前任务 | 读取并执行 |
 |---|---|
-| 贴出一份 JD / "这个岗位我该不该投" / "帮我看看这份工作" / "match score" / "面试会问什么" | → [`job-description-skill/`](job-description-skill/SKILL.md) |
-| "帮我美化简历" / "改简历" / 上传 PDF/docx / "我没有简历帮我做一份" / "换个模板" / LinkedIn 导入 | → [`resume-skill/`](resume-skill/SKILL.md) |
-| "帮我准备 behavioral 面试" / "Tell me about a time…" / "帮我挖一个面试故事" / "STAR 怎么写" / "建我的故事库" / "Amazon LP 怎么准备" | → [`bq-skill/`](bq-skill/SKILL.md) |
-| 一次交出 JD + 简历，想要"全套准备好" | → 先跑 `job-description-skill/`（生成 Offer Strategy Report，内含 Top 10 面试题） → 用户说"投" → 转 `resume-skill/` tailor → "拿到面试" → 转 `bq-skill/` JD-driven prep（JD-driven Top 20 + STAR 模板） |
+| 分析 JD、判断是否值得投、梳理差距或预测面试方向 | `job-description-skill/SKILL.md` |
+| 新建、诊断、定向优化或排版简历 | `resume-skill/SKILL.md` |
+| 挖掘真实经历、整理 STAR/CAR、建立故事库或模拟行为面试 | `bq-skill/SKILL.md` |
+| 同时提供 JD 和简历并要求完整准备 | 先执行 JD；用户确认要投后执行简历；拿到面试后再执行 BQ |
 
-判断不了就问一句：
+选择阶段后，完整读取对应子 Skill，再按其中流程工作。不要为了显得完整而一次加载全部参考文件。
 
-> "你现在在求职链路的哪一步？
-> · 看到一个心动岗位，还没决定要不要投 → **JD Skill**
-> · 已经决定投，需要一份简历 → **Resume Skill**
-> · 已经拿到面试，要准备行为面试题 → **BQ Skill**"
+## 共同执行边界
 
----
+1. **绝不杜撰。** 公司、职位、项目、职责、数字和成果都必须来自用户真实材料；缺失内容写成待确认并继续追问。
+2. **一次只问一个问题。** 简历访谈和故事挖掘都是对话，不是长问卷。
+3. **先结构化，再产出。** 先确认事实与数据，再生成报告、HTML、PDF 或故事库。
+4. **不承诺结果。** Match Score、Interview Probability、薪资判断和题目预测都属于启发式分析，不代表招聘方结论，也不保证获得面试或 Offer。
+5. **默认本地留存。** 生成文件只写入用户明确选择的本地目录，不上传到入行365。材料内容仍会由用户当前使用的 Agent、模型及其服务商处理；如需联网抓取 JD、调用外部服务或公开分享，先说明将发送什么并征得用户同意。
+6. **公开前脱敏。** 用户要分享简历、报告或故事库时，提醒检查电话、邮箱、住址、证件、内部数据和未公开项目。
 
-## 三个子 skill 各自的入口
+## 与入行之路的关系
 
-每个子目录都是一份完整的 skill（各自有 `SKILL.md` + 独立 README）。可以聚合装，也可以只装其中一个。
+- 产品说明与阶段入口：`https://rhzl.ruhang365.cn/tools/lab/career-toolkit`
+- 求职转型路径：`https://rhzl.ruhang365.cn/ai-job-switch`
+- 已完成的岗位报告、简历项目描述或面试故事，可以由用户主动保存为入行之路的私有任务成果。
+- 不要声称本 Skill 已把本地文件自动同步到入行之路，也不要替用户上传个人求职材料。
 
-### 1 · [Job Description Skill](job-description-skill/SKILL.md) — 求职链路的入口
+## 上游与署名
 
-把任何 JD 翻译成一份 10 节的 **Offer Strategy Report**（HTML 单文件，自动打开浏览器）：TL;DR 结论 · Match Score · Interview Probability · 公司背景 · JD 深度解码 · JD ↔ 简历逐条比对 · Gap 与补救 · 为什么投/不投 · 薪资 · 下一步 · Top 10 面试题 · 6 周行动计划。
-
-三步：贴 JD → 给简历 → 自动生成 HTML 报告并打开。
-
-### 2 · [Resume Skill](resume-skill/SKILL.md) — 简历生成与美化
-
-把"我需要一份好看的简历"变成稳定流程：所有素材先汇入 `schema/resume-data.md` 定义的标准数据结构，再套模板渲染。换模板只是换皮，内容不丢。
-
-三条入口：美化已有简历 / LinkedIn 导入 / 对话式建简历。
-11 套打印级模板：Classic-ATS · Ledger · Tech Compact · Modern Sidebar · Pillar · Elegant Serif · Atelier · Timeline · Swiss · Executive · Color-block。
-每次渲染同时输出**锁定版**（直接 Cmd+P 存 PDF）和**可编辑版**（浏览器里点字微调 + 浮动工具条）。
-
-### 3 · [BQ Skill](bq-skill/SKILL.md) — 行为面试故事库
-
-不是背答案，而是**建一套可复用的职业故事库**。流程：挖掘 → 结构化 → 打标 → 存库 → 复用。
-
-能做的事：
-- 挖新故事（四层追问引擎，专治"我没什么亮点"）
-- 回答一道具体 BQ（先查库，命中就复用）
-- 打磨已有答案（诊断 STAR 结构 + 改写）
-- 模拟面试（一次一道，按目标公司风格）
-- JD 驱动的 Top 20 BQ 选题 + STAR 模板 + HTML 报告（对接 job-description-skill）
-
----
-
-## 安装
-
-### Claude 用户
-
-把整个 `offer-toolkit-skill/` 目录放进你的 skill 目录（例如 `~/.claude/skills/` 或 VS Code 的 prompts 目录），三条子 skill 会一起被发现。
-
-**只想装其中一个？** 直接把对应子目录（如 `resume-skill/`）单独复制过去也可以，每个子 skill 都是自包含的。
-
-### 手动调用
-
-- 顶层调度：说"我要找工作 / 求职 / offer" → 走这份 SKILL.md 的路由
-- 直接进子 skill：说"帮我美化简历" / "解码这份 JD" / "帮我准备 BQ" → 直接命中对应子 skill
-
----
-
-## License
-
-MIT — fork, remix, ship your own version.
-
-Created by [Dreameryanyan](https://www.linkedin.com/in/yanliudesign/) · [LinkedIn](https://www.linkedin.com/in/yanliudesign/) · [X](https://x.com/yanliudreamer) · [小红书](https://www.xiaohongshu.com/notification)
+本适配版基于 yanliudesign 的 MIT 开源项目 `offer-toolkit-skill`。三个子 Skill、模板和报告规范保留上游结构与作者署名要求；生成子 Skill 规定的报告时，不得删除其中要求保留的 Dreameryanyan footer。完整来源见 `NOTICE.md` 和 `LICENSE`。

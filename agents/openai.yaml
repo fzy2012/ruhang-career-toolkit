@@ -1,0 +1,9 @@
+interface:
+  display_name: "入行 Career Toolkit"
+  short_description: "从 JD 判断到简历和行为面试的本地求职工作台"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#7C3AED"
+  default_prompt: "使用 $ruhang-career-toolkit，先判断我在求职链路的阶段，再帮我完成当前最需要的一步。"
+policy:
+  allow_implicit_invocation: true
