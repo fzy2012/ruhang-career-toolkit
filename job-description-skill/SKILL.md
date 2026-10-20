@@ -3,6 +3,11 @@ name: job-description-skill
 description: "Job Description 解码器 + Offer 策略系统。把任何 JD 翻译成「这家公司到底在招什么人 / 我的匹配度 / Gap 在哪 / 为什么投/不投 / 面试会问什么 / 下一步怎么走」。只有 3 步：贴 JD → 给简历 → 自动生成并打开一份 HTML Offer Strategy Report。是整个求职链路的入口，向下衔接 Resume Skill 和 BQ Skill。关键词：job description, JD, 职位描述, 匹配度, ATS, resume tailor, 简历定制, 招聘经理, 投不投, should I apply, 面试预测, offer strategy。"
 ---
 
+## 入行本地执行约定
+
+执行前读取 [本地资料与衔接规则](../references/local-workspace.md)。本文中的作者默认输出路径和各 bank 写入位置统一映射到该规则指定的数据根；源目录只读模板与示例，个人索引不得写回源目录。阶段间直接复用已有资料。实际投递和结果通过 [投递管理](../application-tracker-skill/SKILL.md) 记录，报告生成不代表已投递。此适配约定优先于下文上游原有路径示例。
+
+
 # Job Description Skill
 
 把一份 JD 从「招聘话术」翻译成「**你能用的求职情报**」，**一次性产出一份单文件 HTML Offer Strategy Report**，自动在浏览器打开。

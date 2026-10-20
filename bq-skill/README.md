@@ -1,8 +1,30 @@
-# BQ Skill
+<div align="center">
 
-> 📦 Part of the **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** — the full job-hunt bundle (JD · Resume · BQ). Install the bundle to get all three in one shot.
+[中文](./README.zh.md) · **English**
 
-> 🌐 **English** · [中文](./README.zh.md)
+# 💭 BQ Skill
+
+---
+
+**Turn real experience into a reusable behavioral interview story bank.**
+
+[![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](../LICENSE)
+[![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
+[![BQ](https://img.shields.io/badge/BQ-STORY_BANK-8b5cf6?style=flat-square&labelColor=333)]()
+[![Growth](https://img.shields.io/badge/GROWTH-MINDSET-22a06b?style=flat-square&labelColor=333)]()
+[![Flows](https://img.shields.io/badge/FLOWS-5-2ea44f?style=flat-square&labelColor=333)]()
+[![JD Prep](https://img.shields.io/badge/JD_PREP-TOP_20-e37f2c?style=flat-square&labelColor=333)]()
+[![Stars](https://img.shields.io/github/stars/yanliudesign/Behavior-question-skill?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/Behavior-question-skill/stargazers)
+
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
+[![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
+[![OpenCode](https://img.shields.io/badge/OpenCode-Skill-4c8bf5?style=flat-square&labelColor=1a1a1a)]()
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-8b5cf6?style=flat-square&labelColor=1a1a1a)]()
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-e879a8?style=flat-square&labelColor=1a1a1a)]()
+
+</div>
+
+> 📦 Part of the **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** — the full job-hunt bundle (Search · JD · Resume · BQ · Compare · Negotiate). Install the bundle to get all six in one shot.
 
 A Claude skill for behavioral interview prep. Instead of handing you canned answers, it helps you dig your real past experiences out and organize them into a story bank you can reuse. It asks about your experience step by step, uses STAR/CAR to shape each story, tags them ("took ownership", "handled ambiguity", etc.), and saves each one in English and Chinese — so next time you get a different behavioral question, the same story still works.
 
@@ -60,7 +82,8 @@ The probing scripts in `prompts/story-mining.md` and the competency dictionary i
 put in, the more the skill sounds like you.
 
 ## Related skills
-- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — the all-in-one bundle (JD · Resume · BQ)
+- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — the all-in-one bundle (Search · JD · Resume · BQ · Compare · Negotiate)
+- [job-hunt-skill](https://github.com/yanliudesign/job-hunt-skill) — Job discovery and searchable opportunity list
 - [job-description-skill](https://github.com/yanliudesign/job-description-skill) — Job Description Decoder
 - [resume-builder-skill](https://github.com/yanliudesign/resume-builder-skill) — Resume generation & beautification
 

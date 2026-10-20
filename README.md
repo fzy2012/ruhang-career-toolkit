@@ -1,134 +1,56 @@
-<div align="center">
+# Ruhang Career Toolkit
 
-[中文](./README.zh.md) · **English**
+[中文使用说明](README.zh.md) · [Skill entry point](SKILL.md) · [Attribution](NOTICE.md)
 
-# 🧰 Ruhang Career Toolkit
+A local, conversational toolkit covering job discovery, JD analysis, resume preparation, interview preparation, offer comparison and salary negotiation. An application tracker connects drafts, confirmed submissions, immutable submitted materials and outcome reflection. Start by asking Codex to read `SKILL.md`. Keep the complete bundle together.
 
----
+**Status: locally usable version, closed out on 2026-10-20.** Ready for personal use with Codex assistance and explicit user confirmation of key facts. This is not unattended automation or proof of real hiring outcomes. This version is authorized for synchronization to the GitHub project branch; no PR, website deployment or Release is included.
 
-**Three job-hunt tools in one local-first agent skill pack — JD · Resume · BQ.**
+For a first real case, ask Codex to read `SKILL.md`, use `.career-data/personal/` as the data directory, exclude synthetic trial materials, and begin with your resume and one target JD. Reuse that same directory and application ID throughout the workflow. This instruction does not itself create an application or confirm a submission.
 
-> Ruhang365 adaptation: the open Core for [Ruhang Lab](https://rhzl.ruhang365.cn/tools/lab/career-toolkit), with stage routing, clearer privacy boundaries, and RHZL task handoff guidance. The three child skills, templates, and report specifications come from [yanliudesign/offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) under the MIT License with attribution preserved. See [NOTICE.md](NOTICE.md).
+Personal data defaults to the Git-ignored `.career-data/` directory, or an external local directory chosen by the user. No automatic applications, Gmail, Notion, standalone website or publishing is included. Generated materials remain drafts until the user explicitly confirms an actual submission. Unknown facts remain unknown. Upstream examples are never candidate facts.
 
-> Match scores, interview probabilities, and compensation assessments are heuristics. They do not represent an employer decision or guarantee an interview or offer.
+Python 3.10+ standard library commands (run from the project root):
 
-[![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
-[![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
-[![Skills](https://img.shields.io/badge/SKILLS-3-2ea44f?style=flat-square&labelColor=333)]()
-[![Stars](https://img.shields.io/github/stars/fzy2012/ruhang-career-toolkit?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/fzy2012/ruhang-career-toolkit/stargazers)
-
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
-[![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
-[![OpenCode](https://img.shields.io/badge/OpenCode-Skill-4c8bf5?style=flat-square&labelColor=1a1a1a)]()
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-8b5cf6?style=flat-square&labelColor=1a1a1a)]()
-[![Hermes](https://img.shields.io/badge/Hermes-Skill-e879a8?style=flat-square&labelColor=1a1a1a)]()
-
-</div>
-
-Three job-hunting tools bundled as an agent skill pack. Use the whole thing, or just the piece you need — each sub-folder works on its own.
-
-```
-1  See a job you want    →  job-description-skill    Decode the JD, get an Offer Strategy report.
-2  Decide to apply       →  resume-skill             Tailor & polish. 11 print-ready templates.
-3  Land the interview    →  bq-skill                 Mine stories, build a story bank, prep BQs.
+```sh
+python3 application-tracker-skill/scripts/tracker.py read
+python3 application-tracker-skill/scripts/tracker.py report
+python3 application-tracker-skill/scripts/tracker.py verify
+python3 tools/migrate_legacy.py --dry-run
+python3 tools/check_upstreams.py --verify-local
+python3 tools/check_upstreams.py
+python3 -m unittest discover -s tests -v
 ```
 
-## What's inside
+See [tracker instructions](application-tracker-skill/SKILL.md) for revision checks, idempotent writes, confirmation requirements, statuses and archival. Migration copies and verifies without deleting sources or replacing conflicting files. The 12 current resume templates and legacy Tech Compact remain available. Existing HTML/PDF outputs remain intact.
 
-| Sub-skill | What it does |
-|---|---|
-| **[job-description-skill](job-description-skill/)** | Give it a JD and your resume. You get back an HTML report telling you: whether this job is worth applying to, how well you match it, where the gaps are, what you'll probably be asked in interviews, whether the salary is reasonable, and what to do over the next six weeks. |
-| **[resume-skill](resume-skill/)** | Polishes an existing resume, pulls one in from LinkedIn, or builds one from scratch by chatting with you. The content then flows into **11 print-ready templates** (Classic-ATS, Ledger, Tech Compact, Modern Sidebar, Pillar, Elegant Serif, Atelier, Timeline, Swiss, Executive, Color-block). Each render gives you two files: one that prints straight to PDF, and one you can click on in the browser to edit. |
-| **[bq-skill](bq-skill/)** | Instead of handing you canned answers, it helps you dig your real past experiences out and organize them into a story bank you can reuse. It asks about your experience step by step, uses STAR/CAR to shape each story, tags them ("took ownership", "handled ambiguity", etc.), and saves them in English and Chinese — so next time you get a different behavioral question, the same story still works. It can also read a JD, predict the 20 questions that company is likely to ask, and walk you through prep for each one. |
+`upstreams.lock.json` pins Offer Toolkit at `f66c4b75dd68da409197ffc06c9807209037ce41` and ai-job-search v1.7.3 at `84808eebc13fa7b781b2ede034120c092776668d`, with original and installed checksums, selected files and adaptation scope. The read-only updater requires `gh`, reports additions/deletions/modifications/conflicts and never merges. Network errors are incomplete checks. Future updates require module-by-module adaptation and compatibility validation; automatic compatibility is not promised.
 
-## Example
+## Local acceptance results
 
-<img src="docs/en/screenshot-01.png" alt="Offer Strategy Report — hero: Anthropic × Product Designer, Claude Code" width="100%">
+As of 2026-10-20:
 
-<sub>The Offer Strategy Report generated by <code>job-description-skill</code>, opened in-browser — verdict, assumptions, TL;DR, and the built-in EN / 中文 toggle in the bottom-right toolbar.</sub>
+- 30 data/upgrade tests passed; 33 initial browser checks and follow-up checks exercised filtering, language switching, archived links, editing, Markdown download, PDF generation and clipboard fallback.
+- An independent subagent completed six stages with a new synthetic Chinese product-manager profile, two fictional JDs and two fictional offers, executing 44 tracker CLI calls including reads and validation. The parent agent independently inspected files, hashes, links and browser behavior.
+- Submitted snapshots stayed unchanged after editing the current resume. Interview preparation used the submitted version. Replayed requests returned the original record, stale revisions were rejected, and reapplication created a separate ID.
+- Final trial state: two offers and one reapplication draft; historical funnel: two applications, one interview, two offers, zero acceptances. Missing interview history was not inferred, and negotiation drafts did not mark an offer accepted.
+- Original checksums for 145 imported files and two legacy files were verified. Read-only upstream checking changed no source files. Acceptance data remains Git-ignored; source and archive checks passed before closeout.
 
-<table>
-<tr>
-<td width="33%"><img src="docs/en/screenshot-02.png" alt="Screenshot 2" width="100%"></td>
-<td width="33%"><img src="docs/en/screenshot-03.png" alt="Screenshot 3" width="100%"></td>
-<td width="33%"><img src="docs/en/screenshot-04.png" alt="Screenshot 4" width="100%"></td>
-</tr>
-<tr>
-<td><img src="docs/en/screenshot-05.png" alt="Screenshot 5" width="100%"></td>
-<td><img src="docs/en/screenshot-06.png" alt="Screenshot 6" width="100%"></td>
-<td><img src="docs/en/screenshot-07.png" alt="Screenshot 7" width="100%"></td>
-</tr>
-<tr>
-<td><img src="docs/en/screenshot-08.png" alt="Screenshot 8" width="100%"></td>
-<td><img src="docs/en/screenshot-09.png" alt="Screenshot 9" width="100%"></td>
-<td><img src="docs/en/screenshot-10.png" alt="Screenshot 10" width="100%"></td>
-</tr>
-</table>
+Existing local artifacts (ignored by Git; absent from a fresh clone):
 
-<sub>Full galleries: <a href="docs/en/">English</a> · <a href="docs/zh/">中文</a> — sub-skill galleries live under each sub-folder's <code>docs/</code> or <code>assets/</code>.</sub>
+- [Initial acceptance](.career-data/acceptance/index.html) and [verification limits](.career-data/acceptance/verification.json): synthetic candidate, public JD sample, simulated outcomes.
+- [Independent subagent trial](.career-data/subagent-flow-20261020/index.html), [walkthrough and findings](.career-data/subagent-flow-20261020/walkthrough.md), [CLI receipts](.career-data/subagent-flow-20261020/commands/execution-log.json), and [independent review](.career-data/subagent-flow-20261020/review/independent-check.json): fully synthetic candidate, jobs, offers and feedback; no public search.
 
-## Three rules the sub-skills share
+Reuse flows from profile and jobs to JD analysis, targeted resume, confirmed-submission snapshots, interview preparation and feedback, offer comparison, then negotiation drafts and reflection. Final-inventory hashes describe final files; historical evidence comes from readbacks, snapshots and CLI receipts.
 
-1. **Never fabricate.** Every experience, number, and title comes from what the user actually said. Sharpen weak content, don't invent it. Verify numbers.
-2. **One question at a time.** Building a resume, mining a story, prepping a BQ — these are conversations, not questionnaires.
-3. **Structure first, render second.** Get the content into a standard shape and confirm it before generating anything.
+## Remaining operating limits
 
-## Install
+- Keep real data separate from examples and trials. Only explicit user reports justify application/outcome state changes.
+- Offer state is not automatically bound to an existing terms file. The trial recorded one simulated offer before its terms file existed, then appended a source-completion note without rewriting history. Save complete terms and verify the application association before comparison or negotiation.
+- Trial scoring and footer-generation mistakes were corrected, but no automatic gate guarantees every future report follows the rubric or states its sources accurately. Review facts, figures, scoring, sources and compensation terms before external use.
+- Codex still orchestrates file reuse; the tracker does not generate or connect all six reports automatically. Browser edits do not update the structured profile, and tracker reports need regeneration after record changes.
+- Other hosts' discovery/execution, real hiring outcomes, and all PDF readers/ATS systems remain unverified. Public discovery was limited to one employer board and two roles in the first run; restricted-access fallback was simulated. Future upstream releases still require manual adaptation and validation.
 
-Drop the whole `ruhang-career-toolkit/` folder into your skills directory (e.g. `~/.claude/skills/` or VS Code's prompts folder). All three sub-skills get picked up.
+No global Skill installation is changed. Close out this local scope without further feature expansion; external submission, sending or publishing still requires authorization for that action.
 
-Only want one? Copy just that sub-folder — each one is self-contained.
-
-> 🔒 **Ruhang365 does not receive these materials.** Generated files stay in the local directory you choose. Your current agent, model, and provider may still process the content, so their privacy terms also apply.
-
-### Try it in 30 seconds
-
-Once installed, just paste any of these into your Claude Code / VS Code chat:
-
-- *"Should I apply to this?"* + paste a JD link (or full text)
-- *"Beautify my resume"* + drag in a PDF
-- *"Prep me for behavioral interviews"*
-
-The router picks the right sub-skill. You get an HTML report / resume / story bank on your desktop, ready to open.
-
-## Trigger phrases
-
-| You say | Runs |
-|---|---|
-| Paste a JD / *"should I apply to this?"* / *"help me with this job"* | job-description-skill |
-| *"Beautify my resume"* / *"build me one from scratch"* / upload PDF / paste LinkedIn | resume-skill |
-| *"Prep me for behavioral interviews"* / *"tell me about a time…"* / *"mine a story"* | bq-skill |
-| *"Help me find a job"* / hand over JD + resume at once | Top-level [SKILL.md](SKILL.md) routes you to the right one |
-
-## Layout
-
-```
-ruhang-career-toolkit/
-├── SKILL.md                        # Router: intent → sub-skill
-├── README.md / README.zh.md
-├── LICENSE                         # MIT
-├── job-description-skill/          # ① JD decoder + Offer Strategy report
-├── resume-skill/                   # ② Resume builder + 11 templates
-└── bq-skill/                       # ③ Behavioral interview / story bank
-```
-
-Each sub-folder has its own `SKILL.md`, README, prompts, frameworks, and templates.
-
-## Standalone repos
-
-These three also live as separate repos and get maintained there:
-
-- [job-description-skill](https://github.com/yanliudesign/job-description-skill)
-- [resume-builder-skill](https://github.com/yanliudesign/resume-builder-skill)
-- [Behavior-question-skill](https://github.com/yanliudesign/Behavior-question-skill)
-
-This bundle just puts them together with a top-level router.
-
-## License
-
-MIT — fork it, remix it, ship your own version.
-
-Created by [Dreameryanyan](https://www.linkedin.com/in/yanliudesign/) ·
-[LinkedIn](https://www.linkedin.com/in/yanliudesign/) ·
-[X](https://x.com/yanliudreamer) ·
-[Xiaohongshu](https://www.xiaohongshu.com/notification)
+Methods and templates: Dreameryanyan / yanliudesign, Offer Toolkit. Tracking workflow reference: Mads Lorentzen, ai-job-search. Both MIT license notices are retained; see [NOTICE.md](NOTICE.md).

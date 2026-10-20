@@ -1,0 +1,1200 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "offer",
+      "repository": "yanliudesign/offer-toolkit-skill",
+      "url": "https://github.com/yanliudesign/offer-toolkit-skill",
+      "commit": "f66c4b75dd68da409197ffc06c9807209037ce41",
+      "release": null,
+      "scopes": [
+        "job-hunt-skill",
+        "job-description-skill",
+        "resume-skill",
+        "bq-skill",
+        "offer-compare-skill",
+        "salary-negotiation-skill"
+      ],
+      "files": [
+        {
+          "source_path": "LICENSE",
+          "local_path": "references/upstream/offer-LICENSE",
+          "upstream_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6",
+          "upstream_blob": "8a74ba3e49ce902c880e3bdaaf31fc0978d96036",
+          "installed_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6"
+        },
+        {
+          "source_path": "bq-skill/.gitignore",
+          "local_path": "bq-skill/.gitignore",
+          "upstream_sha256": "0e3fbc8b6494333ddacea4dbc8170ae1f74f80a148f768190300a1bd73e99426",
+          "upstream_blob": "40ddbcd71168b4a015d5652a5b1e08f4c55ff09a",
+          "installed_sha256": "0e3fbc8b6494333ddacea4dbc8170ae1f74f80a148f768190300a1bd73e99426"
+        },
+        {
+          "source_path": "bq-skill/README.md",
+          "local_path": "bq-skill/README.md",
+          "upstream_sha256": "23e62faae8c416a68b6f8bb597427d5f5cb09d16e5ceb83dda9c0f346398a754",
+          "upstream_blob": "559ab43bfb918f92a75b21edeb6c2225fce94f8d",
+          "installed_sha256": "23e62faae8c416a68b6f8bb597427d5f5cb09d16e5ceb83dda9c0f346398a754"
+        },
+        {
+          "source_path": "bq-skill/README.zh.md",
+          "local_path": "bq-skill/README.zh.md",
+          "upstream_sha256": "3b1ce8a9ee4e1e7cfe59f3dd0e03ae1314456990993914b047fe135fe85c8aa5",
+          "upstream_blob": "67362cd561b17b0c0c24863ec21daaf266e970fc",
+          "installed_sha256": "3b1ce8a9ee4e1e7cfe59f3dd0e03ae1314456990993914b047fe135fe85c8aa5"
+        },
+        {
+          "source_path": "bq-skill/SKILL.md",
+          "local_path": "bq-skill/SKILL.md",
+          "upstream_sha256": "54ab7fa1c29e18145447e1d4b78ded4c83c63e4179e3543573c61a867fa458d0",
+          "upstream_blob": "856fbfb57244da5412f47901d91bad5e01d8a223",
+          "installed_sha256": "a5b15d4b3474a1ad78503ae7697d692606360c3ac8a9bc6a5d081b278fa663bc"
+        },
+        {
+          "source_path": "bq-skill/assets/bq-prep-report.md",
+          "local_path": "bq-skill/assets/bq-prep-report.md",
+          "upstream_sha256": "e9b4e911f290aa809a9016385d357eb79b0bc30e836ad93a29bb9deeb04d1191",
+          "upstream_blob": "5ef8400a0b7a0f4a95b8e54d96b64bd669fce076",
+          "installed_sha256": "e9b4e911f290aa809a9016385d357eb79b0bc30e836ad93a29bb9deeb04d1191"
+        },
+        {
+          "source_path": "bq-skill/assets/demo-report.html",
+          "local_path": "bq-skill/assets/demo-report.html",
+          "upstream_sha256": "decb8bec8a8aa733d22ff86866939c53bf5c5904ea13c0aa74214221659162ef",
+          "upstream_blob": "bef7ec84fb5c871a9d13804462f7510c3cb700b6",
+          "installed_sha256": "decb8bec8a8aa733d22ff86866939c53bf5c5904ea13c0aa74214221659162ef"
+        },
+        {
+          "source_path": "bq-skill/assets/en/.gitkeep",
+          "local_path": "bq-skill/assets/en/.gitkeep",
+          "upstream_sha256": "6857f3dbb891ac0c30cd686475b427179bd2988a39b36905b66d376ff7a346fe",
+          "upstream_blob": "0c9d6f5a3c5798b1fc3de00ed7ab1c5aae1d4946",
+          "installed_sha256": "6857f3dbb891ac0c30cd686475b427179bd2988a39b36905b66d376ff7a346fe"
+        },
+        {
+          "source_path": "bq-skill/assets/preview.png",
+          "local_path": "bq-skill/assets/preview.png",
+          "upstream_sha256": "c1fd391f701b934116d36619ef3e526310b3aa0181c1f5bd36fe0c4243c49e47",
+          "upstream_blob": "90ecebeea300329703b2a3f55b8b52ddd761313d",
+          "installed_sha256": "c1fd391f701b934116d36619ef3e526310b3aa0181c1f5bd36fe0c4243c49e47"
+        },
+        {
+          "source_path": "bq-skill/assets/zh/.gitkeep",
+          "local_path": "bq-skill/assets/zh/.gitkeep",
+          "upstream_sha256": "d42cc38ed24bbbdb63c01f3c1267490081e36210da372df8dcb11088ec19d51e",
+          "upstream_blob": "af0b9a0c21d2af041a6e1f1fbc5735bd805ff6d7",
+          "installed_sha256": "d42cc38ed24bbbdb63c01f3c1267490081e36210da372df8dcb11088ec19d51e"
+        },
+        {
+          "source_path": "bq-skill/frameworks/company-profiles.md",
+          "local_path": "bq-skill/frameworks/company-profiles.md",
+          "upstream_sha256": "91c8aefb4dc7276f7743e6bfe20578a8077bcf88b4c1084e841895856fb2caa5",
+          "upstream_blob": "81446d62663e7b46bfe01a9fb7055c2092e11413",
+          "installed_sha256": "91c8aefb4dc7276f7743e6bfe20578a8077bcf88b4c1084e841895856fb2caa5"
+        },
+        {
+          "source_path": "bq-skill/frameworks/competency-tags.md",
+          "local_path": "bq-skill/frameworks/competency-tags.md",
+          "upstream_sha256": "5f1bc7e896e288c4795d4e37b4dcddc927fcc6cfa3c1bbcd33cf5ee0e2b5ab33",
+          "upstream_blob": "61f9f739459768b8c677ef8f2d20f8925af48366",
+          "installed_sha256": "5f1bc7e896e288c4795d4e37b4dcddc927fcc6cfa3c1bbcd33cf5ee0e2b5ab33"
+        },
+        {
+          "source_path": "bq-skill/frameworks/star-car.md",
+          "local_path": "bq-skill/frameworks/star-car.md",
+          "upstream_sha256": "41ca6c1cee9cae07f3ca08ec8a7893a528d36456c8197cb9b606dadd1dc50a20",
+          "upstream_blob": "44db36a5f04ed2a35580ce2daa83d3160907bb28",
+          "installed_sha256": "41ca6c1cee9cae07f3ca08ec8a7893a528d36456c8197cb9b606dadd1dc50a20"
+        },
+        {
+          "source_path": "bq-skill/prompts/jd-driven-prep.md",
+          "local_path": "bq-skill/prompts/jd-driven-prep.md",
+          "upstream_sha256": "4d8dfc381df9be8d32dfcb0cccb1e19e7506086e8c2c0c835ca1c26a12e9a46a",
+          "upstream_blob": "8e812a535f63c6d48363fc0f2821be7b111f574a",
+          "installed_sha256": "4d8dfc381df9be8d32dfcb0cccb1e19e7506086e8c2c0c835ca1c26a12e9a46a"
+        },
+        {
+          "source_path": "bq-skill/prompts/story-mining.md",
+          "local_path": "bq-skill/prompts/story-mining.md",
+          "upstream_sha256": "e0eadfaa741435e2ea968450c6d62cd21693bf89a0225747cfb7db72246eff3e",
+          "upstream_blob": "764d9f6d98d15d46ffdc33d3d411c92a75c934ed",
+          "installed_sha256": "e0eadfaa741435e2ea968450c6d62cd21693bf89a0225747cfb7db72246eff3e"
+        },
+        {
+          "source_path": "bq-skill/prompts/structuring.md",
+          "local_path": "bq-skill/prompts/structuring.md",
+          "upstream_sha256": "dd1a0390e436e57ff9595d35f7d700a247154855250e12905023bee45f4a6196",
+          "upstream_blob": "23b1511be297d744db21d8b09b414fc8c80852e9",
+          "installed_sha256": "dd1a0390e436e57ff9595d35f7d700a247154855250e12905023bee45f4a6196"
+        },
+        {
+          "source_path": "bq-skill/story-bank/_index.md",
+          "local_path": "bq-skill/story-bank/_index.md",
+          "upstream_sha256": "2f06a598ae20470690590019a59744b6132837a1b910681844e39c72cc355d71",
+          "upstream_blob": "05dc943274c36f7f04a78f9f78f690da8bee745a",
+          "installed_sha256": "2f06a598ae20470690590019a59744b6132837a1b910681844e39c72cc355d71"
+        },
+        {
+          "source_path": "bq-skill/story-bank/_story-template.md",
+          "local_path": "bq-skill/story-bank/_story-template.md",
+          "upstream_sha256": "da5d214ff9b964d5e373517ee77b8e0b4ac2059291671190aa075830ff7fe74c",
+          "upstream_blob": "f9dee54d8232d13233812fd7acedb0374d5b4f37",
+          "installed_sha256": "da5d214ff9b964d5e373517ee77b8e0b4ac2059291671190aa075830ff7fe74c"
+        },
+        {
+          "source_path": "bq-skill/story-bank/convince-team-rewrite.md",
+          "local_path": "bq-skill/story-bank/convince-team-rewrite.md",
+          "upstream_sha256": "6b9a81762ec8b05a957239b18b709ad45bcad5871ffd861619f44bf5418c74a9",
+          "upstream_blob": "8fdb4a8ebd161f125cc670abd04068220499f2fd",
+          "installed_sha256": "6b9a81762ec8b05a957239b18b709ad45bcad5871ffd861619f44bf5418c74a9"
+        },
+        {
+          "source_path": "job-description-skill/.gitignore",
+          "local_path": "job-description-skill/.gitignore",
+          "upstream_sha256": "2c9f61f88af8ad30c75a4dfc29584f4d4a6f9adda7383a58807b183baf399c1e",
+          "upstream_blob": "ea1bc304b37271511c672d38e903c374e0bcb870",
+          "installed_sha256": "2c9f61f88af8ad30c75a4dfc29584f4d4a6f9adda7383a58807b183baf399c1e"
+        },
+        {
+          "source_path": "job-description-skill/README.md",
+          "local_path": "job-description-skill/README.md",
+          "upstream_sha256": "aa852ca62f76598e3a827456b61272d32b06c75e5a8f3fbc25d716f6c33a9e19",
+          "upstream_blob": "066cdeaf2db8482b7953841bd3ae56ab75338ab5",
+          "installed_sha256": "aa852ca62f76598e3a827456b61272d32b06c75e5a8f3fbc25d716f6c33a9e19"
+        },
+        {
+          "source_path": "job-description-skill/README.zh.md",
+          "local_path": "job-description-skill/README.zh.md",
+          "upstream_sha256": "37e0229af830504a385a65ee238a40433a9a320b5fdfe7100b70822265c169a5",
+          "upstream_blob": "09c0b1b376c16b4019d900e8434924f9524d7d32",
+          "installed_sha256": "37e0229af830504a385a65ee238a40433a9a320b5fdfe7100b70822265c169a5"
+        },
+        {
+          "source_path": "job-description-skill/SKILL.md",
+          "local_path": "job-description-skill/SKILL.md",
+          "upstream_sha256": "3fd961c5735644db124ae15a5045063d0cde381ca2ef5535f18381fdbde01bc6",
+          "upstream_blob": "d01c9aa087b2ad285eb480bc9149fcc1e9e1708f",
+          "installed_sha256": "c8fd472e1840c15be80a9104a5fe8220117581f489ec160e752ecc4e05223be2"
+        },
+        {
+          "source_path": "job-description-skill/docs/en/.gitkeep",
+          "local_path": "job-description-skill/docs/en/.gitkeep",
+          "upstream_sha256": "eecd143e34b27ebd11071fd1118bf9dac5ea3e3f5bfb0f5740ed6fe0fe8d38d5",
+          "upstream_blob": "c2d0247f800916e922b1f1fa708e395f7f376940",
+          "installed_sha256": "eecd143e34b27ebd11071fd1118bf9dac5ea3e3f5bfb0f5740ed6fe0fe8d38d5"
+        },
+        {
+          "source_path": "job-description-skill/docs/en/demo.mp4",
+          "local_path": "job-description-skill/docs/en/demo.mp4",
+          "upstream_sha256": "70f512e5cdc2dc1fec5d71c6923d6e6829b206649c8892b02ab44ba8df9dc3d6",
+          "upstream_blob": "445a3d88e599d2c3f46378d70520a215f68494a3",
+          "installed_sha256": "70f512e5cdc2dc1fec5d71c6923d6e6829b206649c8892b02ab44ba8df9dc3d6"
+        },
+        {
+          "source_path": "job-description-skill/docs/en/openai-report.png",
+          "local_path": "job-description-skill/docs/en/openai-report.png",
+          "upstream_sha256": "9c4c6f294b8c2376469947ed91d3a081a66f8915963a4681c03a733e95b60a29",
+          "upstream_blob": "f7841574ff40d25df71ce9b40723a13c35362437",
+          "installed_sha256": "9c4c6f294b8c2376469947ed91d3a081a66f8915963a4681c03a733e95b60a29"
+        },
+        {
+          "source_path": "job-description-skill/docs/en/preview.gif",
+          "local_path": "job-description-skill/docs/en/preview.gif",
+          "upstream_sha256": "82b3e1e90ffa6763ae6a8a1c59809db8ffc1cc017867f9b3db5dc2d1d3de9eab",
+          "upstream_blob": "6232a25b0364486e461c2285e8b08cd514a0bd69",
+          "installed_sha256": "82b3e1e90ffa6763ae6a8a1c59809db8ffc1cc017867f9b3db5dc2d1d3de9eab"
+        },
+        {
+          "source_path": "job-description-skill/docs/report-preview-en-v2.png",
+          "local_path": "job-description-skill/docs/report-preview-en-v2.png",
+          "upstream_sha256": "1072be86e81ad459b977e0d0d35d199549471711d4bcf18a29d719935572f4fd",
+          "upstream_blob": "e73d5aa43ca77e4a18e0c78864262de91d4016e3",
+          "installed_sha256": "1072be86e81ad459b977e0d0d35d199549471711d4bcf18a29d719935572f4fd"
+        },
+        {
+          "source_path": "job-description-skill/docs/report-preview-en.png",
+          "local_path": "job-description-skill/docs/report-preview-en.png",
+          "upstream_sha256": "9c4c6f294b8c2376469947ed91d3a081a66f8915963a4681c03a733e95b60a29",
+          "upstream_blob": "f7841574ff40d25df71ce9b40723a13c35362437",
+          "installed_sha256": "9c4c6f294b8c2376469947ed91d3a081a66f8915963a4681c03a733e95b60a29"
+        },
+        {
+          "source_path": "job-description-skill/docs/report-preview-zh-v2.png",
+          "local_path": "job-description-skill/docs/report-preview-zh-v2.png",
+          "upstream_sha256": "52e3d9761912d44ed0f2279187f935f72ec9bd1d491189437c71467cc10ec42b",
+          "upstream_blob": "b567376c22b6463bff8b92221e128dd7339e87f1",
+          "installed_sha256": "52e3d9761912d44ed0f2279187f935f72ec9bd1d491189437c71467cc10ec42b"
+        },
+        {
+          "source_path": "job-description-skill/docs/report-preview-zh.png",
+          "local_path": "job-description-skill/docs/report-preview-zh.png",
+          "upstream_sha256": "aed0d3d3b480d424907684b1389d3e76def6169dada6725f37629b9372cd360e",
+          "upstream_blob": "e8025489d88047fd9bbe7473e223351db50f4a15",
+          "installed_sha256": "aed0d3d3b480d424907684b1389d3e76def6169dada6725f37629b9372cd360e"
+        },
+        {
+          "source_path": "job-description-skill/docs/zh/.gitkeep",
+          "local_path": "job-description-skill/docs/zh/.gitkeep",
+          "upstream_sha256": "d2b9380c8891a3a1c5c609f2cf403704b4334bc1397d7b6063e86f84a2451bc6",
+          "upstream_blob": "b22535a1a6931eff1d1c1467f5449e97c738edf9",
+          "installed_sha256": "d2b9380c8891a3a1c5c609f2cf403704b4334bc1397d7b6063e86f84a2451bc6"
+        },
+        {
+          "source_path": "job-description-skill/docs/zh/demo.mp4",
+          "local_path": "job-description-skill/docs/zh/demo.mp4",
+          "upstream_sha256": "205cce39ca29cdcee3bb4450d89d12f86f7f6789fa06362dbbe6c4dfc1b3f5ee",
+          "upstream_blob": "f7f862d65b184d5dbbea1d6304ac77bb0258dc13",
+          "installed_sha256": "205cce39ca29cdcee3bb4450d89d12f86f7f6789fa06362dbbe6c4dfc1b3f5ee"
+        },
+        {
+          "source_path": "job-description-skill/docs/zh/openai-report.png",
+          "local_path": "job-description-skill/docs/zh/openai-report.png",
+          "upstream_sha256": "52b7bcfff9754de91a7303ead3b80f87b63e0ea9bd83dab4ddf32d2407702754",
+          "upstream_blob": "861013d73b3dbb7a449db57d37519faa03977900",
+          "installed_sha256": "52b7bcfff9754de91a7303ead3b80f87b63e0ea9bd83dab4ddf32d2407702754"
+        },
+        {
+          "source_path": "job-description-skill/docs/zh/preview.gif",
+          "local_path": "job-description-skill/docs/zh/preview.gif",
+          "upstream_sha256": "81cce228a7f6fb75ad616e6ab027d77ed067175dde89152012ed5fa2e6bbb714",
+          "upstream_blob": "97ef118f46f436c9af7c566f498733a382e0d875",
+          "installed_sha256": "81cce228a7f6fb75ad616e6ab027d77ed067175dde89152012ed5fa2e6bbb714"
+        },
+        {
+          "source_path": "job-description-skill/examples/offer-strategy-template.html",
+          "local_path": "job-description-skill/examples/offer-strategy-template.html",
+          "upstream_sha256": "ff4f6fbc494ca59c0cb6cea47cbfb6c6f97dcfc80a53985395b4f85c778e8b6e",
+          "upstream_blob": "d1bb886be2977b2b428a040f6bea05ff66ebd1d8",
+          "installed_sha256": "ff4f6fbc494ca59c0cb6cea47cbfb6c6f97dcfc80a53985395b4f85c778e8b6e"
+        },
+        {
+          "source_path": "job-description-skill/frameworks/decode-patterns.md",
+          "local_path": "job-description-skill/frameworks/decode-patterns.md",
+          "upstream_sha256": "52dda2b88ce0cf627138428c7e9ed776f5c03ccdb56eff07f408755c2235626f",
+          "upstream_blob": "2883965be64ecde03e89e49f0a706dc09df9fd5b",
+          "installed_sha256": "52dda2b88ce0cf627138428c7e9ed776f5c03ccdb56eff07f408755c2235626f"
+        },
+        {
+          "source_path": "job-description-skill/frameworks/go-no-go.md",
+          "local_path": "job-description-skill/frameworks/go-no-go.md",
+          "upstream_sha256": "b8fbf367d87c05c63affebfb88dff40e57d4e197ea550bf601d0ab6eace1ba39",
+          "upstream_blob": "a8b8f19b452dad12b52fe8bf0440ffb3d7b23c6e",
+          "installed_sha256": "b8fbf367d87c05c63affebfb88dff40e57d4e197ea550bf601d0ab6eace1ba39"
+        },
+        {
+          "source_path": "job-description-skill/frameworks/match-rubric.md",
+          "local_path": "job-description-skill/frameworks/match-rubric.md",
+          "upstream_sha256": "b65217ed4dd7f86becfbc3686d5bf3cd98c5b565a4cb8d8d1a87b8886e02bee7",
+          "upstream_blob": "dc19b32cb8c14bf1f0b3098875ff7d6b2fa1b397",
+          "installed_sha256": "b65217ed4dd7f86becfbc3686d5bf3cd98c5b565a4cb8d8d1a87b8886e02bee7"
+        },
+        {
+          "source_path": "job-description-skill/frameworks/offer-strategy-report.md",
+          "local_path": "job-description-skill/frameworks/offer-strategy-report.md",
+          "upstream_sha256": "db0df932efbf52f896ac36f421bd312a3f1dd498d01c035987763b8918d5a685",
+          "upstream_blob": "7da271031946b709e7e788eecc2b68056f97fdf2",
+          "installed_sha256": "db0df932efbf52f896ac36f421bd312a3f1dd498d01c035987763b8918d5a685"
+        },
+        {
+          "source_path": "job-description-skill/frameworks/resume-tailoring.md",
+          "local_path": "job-description-skill/frameworks/resume-tailoring.md",
+          "upstream_sha256": "2726464665f1458b4c064b5d09c6f4525cf5ca4290a324dc658e5ddc0a130047",
+          "upstream_blob": "fea084460cc03d956f34e9900827aa63e32a1019",
+          "installed_sha256": "2726464665f1458b4c064b5d09c6f4525cf5ca4290a324dc658e5ddc0a130047"
+        },
+        {
+          "source_path": "job-description-skill/jd-bank/_index.md",
+          "local_path": "job-description-skill/jd-bank/_index.md",
+          "upstream_sha256": "5013aa1149e29d79dd04fc566e7ad3d891e04e2b7eb406d0fb25ec75f39682f9",
+          "upstream_blob": "b09bab0604f524a85ad6f6637d4b609782a641c0",
+          "installed_sha256": "5013aa1149e29d79dd04fc566e7ad3d891e04e2b7eb406d0fb25ec75f39682f9"
+        },
+        {
+          "source_path": "job-description-skill/jd-bank/_jd-template.md",
+          "local_path": "job-description-skill/jd-bank/_jd-template.md",
+          "upstream_sha256": "5218f073a4209a596874276d1ac1a52e0b1cc6c6c2bceb14ba299260f9d38d91",
+          "upstream_blob": "2f6270f995aa409078a1f1bbe82445d36ef8f702",
+          "installed_sha256": "5218f073a4209a596874276d1ac1a52e0b1cc6c6c2bceb14ba299260f9d38d91"
+        },
+        {
+          "source_path": "job-description-skill/prompts/interview-predictor.md",
+          "local_path": "job-description-skill/prompts/interview-predictor.md",
+          "upstream_sha256": "171486917299302cf1e58cc66d66830f23e65253b5cb4ce2b001cffc967f3442",
+          "upstream_blob": "a99115dfe4507f8a654f3307b0d5c3322d7f7d14",
+          "installed_sha256": "171486917299302cf1e58cc66d66830f23e65253b5cb4ce2b001cffc967f3442"
+        },
+        {
+          "source_path": "job-description-skill/prompts/jd-decoder.md",
+          "local_path": "job-description-skill/prompts/jd-decoder.md",
+          "upstream_sha256": "fcc9ea32c2c30daa55784a6ca7110a4925a7ece6f86777d2a952e138cfa33c7b",
+          "upstream_blob": "a8092ed9ca717b84ed4f371ea135c33aa3da2109",
+          "installed_sha256": "fcc9ea32c2c30daa55784a6ca7110a4925a7ece6f86777d2a952e138cfa33c7b"
+        },
+        {
+          "source_path": "job-description-skill/prompts/match-score.md",
+          "local_path": "job-description-skill/prompts/match-score.md",
+          "upstream_sha256": "e4c3510b6f96b3c1f2f6846315c6d775830a90f0fac5e4b9268d48687f2485c1",
+          "upstream_blob": "21f68404ef936d0787be9a2c4e1936581e7a510a",
+          "installed_sha256": "e4c3510b6f96b3c1f2f6846315c6d775830a90f0fac5e4b9268d48687f2485c1"
+        },
+        {
+          "source_path": "job-description-skill/prompts/resume-tailor.md",
+          "local_path": "job-description-skill/prompts/resume-tailor.md",
+          "upstream_sha256": "f921f734f0587a3548fce2e7794abdeb86d37b63b51f74e9b0394f08d1b2f84e",
+          "upstream_blob": "0e2678fff4a9b02b8005eb93e9ddb959fb59f3f5",
+          "installed_sha256": "f921f734f0587a3548fce2e7794abdeb86d37b63b51f74e9b0394f08d1b2f84e"
+        },
+        {
+          "source_path": "job-description-skill/prompts/should-i-apply.md",
+          "local_path": "job-description-skill/prompts/should-i-apply.md",
+          "upstream_sha256": "90386101d1a68b128f7ab09f359a4b7afcb135884e63bcfeb900d485864bf5d9",
+          "upstream_blob": "794cf63da32a4121892caed700b1ea9570d859ee",
+          "installed_sha256": "90386101d1a68b128f7ab09f359a4b7afcb135884e63bcfeb900d485864bf5d9"
+        },
+        {
+          "source_path": "job-hunt-skill/README.md",
+          "local_path": "job-hunt-skill/README.md",
+          "upstream_sha256": "38beba55f5c21d50baa72beaf8c6a5e386f59da59e7e99e13c648b3323e00f79",
+          "upstream_blob": "985d549c8a73741e039c2fc4f1bc6ba4ade1a410",
+          "installed_sha256": "38beba55f5c21d50baa72beaf8c6a5e386f59da59e7e99e13c648b3323e00f79"
+        },
+        {
+          "source_path": "job-hunt-skill/README.zh.md",
+          "local_path": "job-hunt-skill/README.zh.md",
+          "upstream_sha256": "44a23370971d7d891b2e215e81df3dc5229703f0a86825212be35d16ce437e2e",
+          "upstream_blob": "aff8bc491c06541875945ebb4e79dd6fab66da2e",
+          "installed_sha256": "44a23370971d7d891b2e215e81df3dc5229703f0a86825212be35d16ce437e2e"
+        },
+        {
+          "source_path": "job-hunt-skill/SKILL.md",
+          "local_path": "job-hunt-skill/SKILL.md",
+          "upstream_sha256": "478df5f417a57a73c28aabf11c35011d6f608a3eedb1ccc004e5e60b16ee09bc",
+          "upstream_blob": "460c9aebd2d3657352328d8d3acbe9ed19348467",
+          "installed_sha256": "71908b3f2231d58df85cae037a8b309840b01c2fe37d9dc0569d6676ec482b16"
+        },
+        {
+          "source_path": "job-hunt-skill/assets/report-spec.md",
+          "local_path": "job-hunt-skill/assets/report-spec.md",
+          "upstream_sha256": "f3732709326391bdd800669ce1527dd7f5986a8a4c63fb278b62d612bbcd6f58",
+          "upstream_blob": "7412e0ca2ddd5f8a5b5e7e276b7b4d4b4831a205",
+          "installed_sha256": "f3732709326391bdd800669ce1527dd7f5986a8a4c63fb278b62d612bbcd6f58"
+        },
+        {
+          "source_path": "job-hunt-skill/evals/evals.json",
+          "local_path": "job-hunt-skill/evals/evals.json",
+          "upstream_sha256": "da2a11a4e5620ace92313bc00c845a00079f19e91b712b0dcd2f637fe9f68d1c",
+          "upstream_blob": "18e762c158e9989362a40adf8cb6395e18ee3a5f",
+          "installed_sha256": "da2a11a4e5620ace92313bc00c845a00079f19e91b712b0dcd2f637fe9f68d1c"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/cn/job-search-01.png",
+          "local_path": "job-hunt-skill/examples/cn/job-search-01.png",
+          "upstream_sha256": "180858d31b4e521a60b2d324be2e54b5592c02af4ccecaf9db83f26113d73ccd",
+          "upstream_blob": "aa5ee46a626318327338ca94c4ba398230a18c13",
+          "installed_sha256": "180858d31b4e521a60b2d324be2e54b5592c02af4ccecaf9db83f26113d73ccd"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/cn/job-search-02.png",
+          "local_path": "job-hunt-skill/examples/cn/job-search-02.png",
+          "upstream_sha256": "1901a79d012c2115be4ddf88eccf8e1a86f1f40f31e4d10f1b4745a7cbe601e8",
+          "upstream_blob": "07fa2ff12f97dd1fe04a83fd43f962e342a0b154",
+          "installed_sha256": "1901a79d012c2115be4ddf88eccf8e1a86f1f40f31e4d10f1b4745a7cbe601e8"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/cn/job-search-03.png",
+          "local_path": "job-hunt-skill/examples/cn/job-search-03.png",
+          "upstream_sha256": "7560a0065ba3d2c0d28eb2bcb034b531a68e317c82a366a14565e469181123af",
+          "upstream_blob": "f9286bd33390662961d9ea33d8a6624838c341b0",
+          "installed_sha256": "7560a0065ba3d2c0d28eb2bcb034b531a68e317c82a366a14565e469181123af"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/cn/job-search-04.png",
+          "local_path": "job-hunt-skill/examples/cn/job-search-04.png",
+          "upstream_sha256": "7302a5f32ccdb40b79882042025643df908b52339da88e88cad79348ca16c44d",
+          "upstream_blob": "0f6307c872e159a309d8e3ceca17037565254857",
+          "installed_sha256": "7302a5f32ccdb40b79882042025643df908b52339da88e88cad79348ca16c44d"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/cn/job-search-05.png",
+          "local_path": "job-hunt-skill/examples/cn/job-search-05.png",
+          "upstream_sha256": "48c6f338cd1f42d57b3c46a39e0984e527eff390a8d691397c41f7837aea8f23",
+          "upstream_blob": "eda39bde5cbac82345616a45058eecefb0928bec",
+          "installed_sha256": "48c6f338cd1f42d57b3c46a39e0984e527eff390a8d691397c41f7837aea8f23"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/en/job-search-01.png",
+          "local_path": "job-hunt-skill/examples/en/job-search-01.png",
+          "upstream_sha256": "1b17e78c45e5e3da0abe17c302bd6531907fd2c4155406a0dd186b651c7d7ae1",
+          "upstream_blob": "409fc459821820bc19bbe3e380f95ffe5c0d2d05",
+          "installed_sha256": "1b17e78c45e5e3da0abe17c302bd6531907fd2c4155406a0dd186b651c7d7ae1"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/en/job-search-02.png",
+          "local_path": "job-hunt-skill/examples/en/job-search-02.png",
+          "upstream_sha256": "8c74d237b3ba412ed2853114ae338fc9cebff4c21b5ad084ad184d1f80b32f9b",
+          "upstream_blob": "fb83d67dc6899cefa8177ed5d43bc97c3190b495",
+          "installed_sha256": "8c74d237b3ba412ed2853114ae338fc9cebff4c21b5ad084ad184d1f80b32f9b"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/en/job-search-03.png",
+          "local_path": "job-hunt-skill/examples/en/job-search-03.png",
+          "upstream_sha256": "62f41c5edc1f85f9f8600166d2266ab0851535ae24ea9ba7d2f77a5549480ad8",
+          "upstream_blob": "f77e88050b9b97fc657129ba1352f7a9ad27c112",
+          "installed_sha256": "62f41c5edc1f85f9f8600166d2266ab0851535ae24ea9ba7d2f77a5549480ad8"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/en/job-search-04.png",
+          "local_path": "job-hunt-skill/examples/en/job-search-04.png",
+          "upstream_sha256": "2dedffba47ac83d9b32f6e4c8871e43932a59e7de2e983466c5976c30623a9fe",
+          "upstream_blob": "870d012671dc8cde52c3b78dadbd338e374381d6",
+          "installed_sha256": "2dedffba47ac83d9b32f6e4c8871e43932a59e7de2e983466c5976c30623a9fe"
+        },
+        {
+          "source_path": "job-hunt-skill/examples/en/job-search-05.png",
+          "local_path": "job-hunt-skill/examples/en/job-search-05.png",
+          "upstream_sha256": "906d5211eae20d94bf0cd5deb0c2bb846a89d5fab380d059047a1b7b1696f50d",
+          "upstream_blob": "0fcc0f8076134d3d2c5a242a9c616f3e7248756e",
+          "installed_sha256": "906d5211eae20d94bf0cd5deb0c2bb846a89d5fab380d059047a1b7b1696f50d"
+        },
+        {
+          "source_path": "job-hunt-skill/references/evidence-ranking.md",
+          "local_path": "job-hunt-skill/references/evidence-ranking.md",
+          "upstream_sha256": "a3d6ce16235396582cbdc5e084ed95aca8347c5c176969606a4e21751b5d99d9",
+          "upstream_blob": "422509d4748a7179343eba0ff1bb6c6e419cae94",
+          "installed_sha256": "a3d6ce16235396582cbdc5e084ed95aca8347c5c176969606a4e21751b5d99d9"
+        },
+        {
+          "source_path": "offer-compare-skill/LICENSE",
+          "local_path": "offer-compare-skill/LICENSE",
+          "upstream_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6",
+          "upstream_blob": "8a74ba3e49ce902c880e3bdaaf31fc0978d96036",
+          "installed_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6"
+        },
+        {
+          "source_path": "offer-compare-skill/README.md",
+          "local_path": "offer-compare-skill/README.md",
+          "upstream_sha256": "d3e43a4760c70990214a9e13fb34904dff2756dd1ffbfc683d1c1dd0df0834a2",
+          "upstream_blob": "3c31b68510e0660a844bb9987f5e67bd7212fffc",
+          "installed_sha256": "d3e43a4760c70990214a9e13fb34904dff2756dd1ffbfc683d1c1dd0df0834a2"
+        },
+        {
+          "source_path": "offer-compare-skill/README.zh.md",
+          "local_path": "offer-compare-skill/README.zh.md",
+          "upstream_sha256": "bb815a564051092637696b86ef7b5151c79af5ec3fc5772ca819bbe28650fec0",
+          "upstream_blob": "79cd51dfe38a06e362758ec189a320a6b452e87d",
+          "installed_sha256": "bb815a564051092637696b86ef7b5151c79af5ec3fc5772ca819bbe28650fec0"
+        },
+        {
+          "source_path": "offer-compare-skill/SKILL.md",
+          "local_path": "offer-compare-skill/SKILL.md",
+          "upstream_sha256": "9add600ec1e52fb3f390238759c3b5de42bbc07c36637801509afcf4bc91f785",
+          "upstream_blob": "c1267e8ab1335b7be70bcd26cf12ee420061c7d7",
+          "installed_sha256": "e6197c0b9d6cf1b4a5585b161b635b53148cb336c371daa809402b8c45f75c4c"
+        },
+        {
+          "source_path": "offer-compare-skill/examples/offer-compare-template.html",
+          "local_path": "offer-compare-skill/examples/offer-compare-template.html",
+          "upstream_sha256": "bb3253da13328f50cf02acb87f57155bed2730a07564320260fa0807f719e1c6",
+          "upstream_blob": "5567956819ab39df6e1858e4505b40f27565b8cb",
+          "installed_sha256": "bb3253da13328f50cf02acb87f57155bed2730a07564320260fa0807f719e1c6"
+        },
+        {
+          "source_path": "offer-compare-skill/frameworks/dimension-rubric.md",
+          "local_path": "offer-compare-skill/frameworks/dimension-rubric.md",
+          "upstream_sha256": "c955fae5439be6ebcbefcc94d5dcb9d8190d6c4115eb3d26808ad97741ee0ac4",
+          "upstream_blob": "8c24fe88955b2e89d1401f3b3146d54fca771ec6",
+          "installed_sha256": "c955fae5439be6ebcbefcc94d5dcb9d8190d6c4115eb3d26808ad97741ee0ac4"
+        },
+        {
+          "source_path": "offer-compare-skill/frameworks/hidden-signals-dictionary.md",
+          "local_path": "offer-compare-skill/frameworks/hidden-signals-dictionary.md",
+          "upstream_sha256": "025705e10df68e1c226f881e3e17d32ad3c28f78415b6bf0c218e050fd8e7aca",
+          "upstream_blob": "68c3462ab6a741293a3ce22e78626471f3ef58de",
+          "installed_sha256": "025705e10df68e1c226f881e3e17d32ad3c28f78415b6bf0c218e050fd8e7aca"
+        },
+        {
+          "source_path": "offer-compare-skill/frameworks/offer-compare-report.md",
+          "local_path": "offer-compare-skill/frameworks/offer-compare-report.md",
+          "upstream_sha256": "deb5b4d6e3e3d9a372688e306eac44d1fb1b2e9ca5c48b4ebaa30774d2d1b1a4",
+          "upstream_blob": "a596af88c454dfccd3762091042d59af8c190147",
+          "installed_sha256": "deb5b4d6e3e3d9a372688e306eac44d1fb1b2e9ca5c48b4ebaa30774d2d1b1a4"
+        },
+        {
+          "source_path": "offer-compare-skill/frameworks/risk-taxonomy.md",
+          "local_path": "offer-compare-skill/frameworks/risk-taxonomy.md",
+          "upstream_sha256": "eb82e10792c33e162faa78df8b8fdf2f5301838b192a886affcee25960180762",
+          "upstream_blob": "12f52e64abf9ffa83fee8b4a8f88cae2e9690c36",
+          "installed_sha256": "eb82e10792c33e162faa78df8b8fdf2f5301838b192a886affcee25960180762"
+        },
+        {
+          "source_path": "offer-compare-skill/offer-bank/_index.md",
+          "local_path": "offer-compare-skill/offer-bank/_index.md",
+          "upstream_sha256": "569037b2c46ff36a6e09c44d9d9ef0d184f25e350272056e27b05959e9b002eb",
+          "upstream_blob": "f1216e4cb02079d38bd8473cec4864b60bd77ec0",
+          "installed_sha256": "569037b2c46ff36a6e09c44d9d9ef0d184f25e350272056e27b05959e9b002eb"
+        },
+        {
+          "source_path": "offer-compare-skill/offer-bank/_template.md",
+          "local_path": "offer-compare-skill/offer-bank/_template.md",
+          "upstream_sha256": "afc8982ede320e29d47f572673f34a33cd1b101f93f0315169706f1228cec099",
+          "upstream_blob": "376581476f1893f13b45c4c315db4cb0e23aa7ef",
+          "installed_sha256": "afc8982ede320e29d47f572673f34a33cd1b101f93f0315169706f1228cec099"
+        },
+        {
+          "source_path": "offer-compare-skill/offer-bank/anthropic-vs-linear-staff-pd-202607.md",
+          "local_path": "offer-compare-skill/offer-bank/anthropic-vs-linear-staff-pd-202607.md",
+          "upstream_sha256": "c030dc1cb834d92987f7d7bee122d945ffaa126491125a989efddaa2eac381df",
+          "upstream_blob": "72d6137496e32a7606c1358c2e93b55635a51de2",
+          "installed_sha256": "c030dc1cb834d92987f7d7bee122d945ffaa126491125a989efddaa2eac381df"
+        },
+        {
+          "source_path": "offer-compare-skill/offer-bank/microsoft-stay-vs-linear-staff-pd-202607.md",
+          "local_path": "offer-compare-skill/offer-bank/microsoft-stay-vs-linear-staff-pd-202607.md",
+          "upstream_sha256": "883a033e94ba4d9f6a93ad87496757162deaea2d707f95249228ffcd54e7e072",
+          "upstream_blob": "ca4f7ad15e8d3fa8d37faba3896f9e6ede0ac045",
+          "installed_sha256": "883a033e94ba4d9f6a93ad87496757162deaea2d707f95249228ffcd54e7e072"
+        },
+        {
+          "source_path": "offer-compare-skill/offer-bank/msft-vs-linear-vs-anthropic-pd-202607.md",
+          "local_path": "offer-compare-skill/offer-bank/msft-vs-linear-vs-anthropic-pd-202607.md",
+          "upstream_sha256": "aaec0ce95956a2542fe698663f42f3f5c530eaf552ce670ca3552dd273a2ad66",
+          "upstream_blob": "9e2381aa7f14f38f951550aa74ef9791e7518f72",
+          "installed_sha256": "aaec0ce95956a2542fe698663f42f3f5c530eaf552ce670ca3552dd273a2ad66"
+        },
+        {
+          "source_path": "offer-compare-skill/prompts/dimension-compare.md",
+          "local_path": "offer-compare-skill/prompts/dimension-compare.md",
+          "upstream_sha256": "7a0094570f261dd8a04226920229837504a096dd8f832d69c4dd309a0ac40264",
+          "upstream_blob": "3c4ada8681aba05f66340e8e54a265d70354bc54",
+          "installed_sha256": "7a0094570f261dd8a04226920229837504a096dd8f832d69c4dd309a0ac40264"
+        },
+        {
+          "source_path": "offer-compare-skill/prompts/hidden-signals.md",
+          "local_path": "offer-compare-skill/prompts/hidden-signals.md",
+          "upstream_sha256": "2bce2c8337845fa46adc2c81fd7639c6c5cec9cd49090042842009a6b76e5771",
+          "upstream_blob": "2fc6e4bcc701a941b82b5d75db77975dba9cabbb",
+          "installed_sha256": "2bce2c8337845fa46adc2c81fd7639c6c5cec9cd49090042842009a6b76e5771"
+        },
+        {
+          "source_path": "offer-compare-skill/prompts/offer-breakdown.md",
+          "local_path": "offer-compare-skill/prompts/offer-breakdown.md",
+          "upstream_sha256": "8ef1fd01a974381fbfbb26a091089b6c6617319f2adbedd3e72a1d8ba9570e6c",
+          "upstream_blob": "f4d5572eed443e81a5603cb0576176b94bc67c0f",
+          "installed_sha256": "8ef1fd01a974381fbfbb26a091089b6c6617319f2adbedd3e72a1d8ba9570e6c"
+        },
+        {
+          "source_path": "offer-compare-skill/prompts/recommendation.md",
+          "local_path": "offer-compare-skill/prompts/recommendation.md",
+          "upstream_sha256": "a62c9485ee08be6a51d567c0fa7f582748033301715c3b4acb00aa8d910c1bff",
+          "upstream_blob": "593e9637168726a47291ebba596fd9cfd07f58d7",
+          "installed_sha256": "a62c9485ee08be6a51d567c0fa7f582748033301715c3b4acb00aa8d910c1bff"
+        },
+        {
+          "source_path": "offer-compare-skill/prompts/risk-analysis.md",
+          "local_path": "offer-compare-skill/prompts/risk-analysis.md",
+          "upstream_sha256": "76e8d82915b4ac02bca76ba968e261e49e2ccd4746df78fe97ad24efe9bac241",
+          "upstream_blob": "d3d2c6f473b35c5e1356d449477f3591c412490c",
+          "installed_sha256": "76e8d82915b4ac02bca76ba968e261e49e2ccd4746df78fe97ad24efe9bac241"
+        },
+        {
+          "source_path": "resume-skill/.gitignore",
+          "local_path": "resume-skill/.gitignore",
+          "upstream_sha256": "67986beabd114c2f8827eba9b6802e411f2fd968ad115fca01c0b9afc9330684",
+          "upstream_blob": "b40af18c98ebe6d5b32ce05894b576ef42da483b",
+          "installed_sha256": "67986beabd114c2f8827eba9b6802e411f2fd968ad115fca01c0b9afc9330684"
+        },
+        {
+          "source_path": "resume-skill/LICENSE",
+          "local_path": "resume-skill/LICENSE",
+          "upstream_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6",
+          "upstream_blob": "8a74ba3e49ce902c880e3bdaaf31fc0978d96036",
+          "installed_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6"
+        },
+        {
+          "source_path": "resume-skill/README.md",
+          "local_path": "resume-skill/README.md",
+          "upstream_sha256": "b792b2a4a8a6dc926eca2525a5199a06e725e3790ea545ecb3883167103eaa6a",
+          "upstream_blob": "453c7d75df889ec1efb6741d55abdd6a6418f4ac",
+          "installed_sha256": "b792b2a4a8a6dc926eca2525a5199a06e725e3790ea545ecb3883167103eaa6a"
+        },
+        {
+          "source_path": "resume-skill/README.zh.md",
+          "local_path": "resume-skill/README.zh.md",
+          "upstream_sha256": "f9d52b5cd5ecae6d3fc1f445e2212d9a5a8a206dcaaca43b4f29ee9e22140cd9",
+          "upstream_blob": "727d473c62af3d208de8f4f3b35ef3a10d178061",
+          "installed_sha256": "f9d52b5cd5ecae6d3fc1f445e2212d9a5a8a206dcaaca43b4f29ee9e22140cd9"
+        },
+        {
+          "source_path": "resume-skill/SKILL.md",
+          "local_path": "resume-skill/SKILL.md",
+          "upstream_sha256": "2cb19e9fa1fbb7cae5b2b66830606f399668b77250c2dee95b83eb5a82f9c9b3",
+          "upstream_blob": "2762a182025b6096711ad2b647deae8176b5bb3f",
+          "installed_sha256": "c43a496f001612c8e9c42c6f109f38ed9537f912cbbd326696500335771f1a16"
+        },
+        {
+          "source_path": "resume-skill/docs/en/.gitkeep",
+          "local_path": "resume-skill/docs/en/.gitkeep",
+          "upstream_sha256": "d2dfe6471e2c1a60687e5ba0b0cc5ebb24d8923efe1219a3803cc58661721210",
+          "upstream_blob": "bd7069c88c37d195a029ba200a39ebbacfb4ec16",
+          "installed_sha256": "d2dfe6471e2c1a60687e5ba0b0cc5ebb24d8923efe1219a3803cc58661721210"
+        },
+        {
+          "source_path": "resume-skill/docs/preview.png",
+          "local_path": "resume-skill/docs/preview.png",
+          "upstream_sha256": "9b6f97089be0923437a23703332bcf3b7a3593455caa7be3296597bd82199473",
+          "upstream_blob": "512f4b0f9328833f9abda8e23a45353d4987f6f3",
+          "installed_sha256": "9b6f97089be0923437a23703332bcf3b7a3593455caa7be3296597bd82199473"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/atelier.png",
+          "local_path": "resume-skill/docs/templates/atelier.png",
+          "upstream_sha256": "48ca173b99421799044f248df298b1d194278c35ee82c8c037ff5b48a91ac87a",
+          "upstream_blob": "14a1412511aaf6b27a5369886e40c6708f240eed",
+          "installed_sha256": "48ca173b99421799044f248df298b1d194278c35ee82c8c037ff5b48a91ac87a"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/classic-ats.png",
+          "local_path": "resume-skill/docs/templates/classic-ats.png",
+          "upstream_sha256": "1f14b0b2dd8f338da93241fb55231eebd16248d1e0c07c7220662efb4dde7e59",
+          "upstream_blob": "15b886a85f1c2d5a4f0a68f3116edb1949380295",
+          "installed_sha256": "1f14b0b2dd8f338da93241fb55231eebd16248d1e0c07c7220662efb4dde7e59"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/editorial-banner.png",
+          "local_path": "resume-skill/docs/templates/editorial-banner.png",
+          "upstream_sha256": "82ac623e927578f293d087d1e0c44fc4da53746faeb3a8bd3678cc6f71678bdd",
+          "upstream_blob": "5a65bfaee0944a4f4e9202ad381195b9bdc6860e",
+          "installed_sha256": "82ac623e927578f293d087d1e0c44fc4da53746faeb3a8bd3678cc6f71678bdd"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/elegant-serif.png",
+          "local_path": "resume-skill/docs/templates/elegant-serif.png",
+          "upstream_sha256": "5840193da297b0fcca5a8294f7035b7819c9edd66744489558a23beb9c2e35f7",
+          "upstream_blob": "b4683dd2c61453bee39bc665ad23d2472399e222",
+          "installed_sha256": "5840193da297b0fcca5a8294f7035b7819c9edd66744489558a23beb9c2e35f7"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/executive.png",
+          "local_path": "resume-skill/docs/templates/executive.png",
+          "upstream_sha256": "a297639ab712bee5db24e0ecbfdb60d73f515a6a3bfce6d44f71fe7302558879",
+          "upstream_blob": "949736f20ffba5d9077d760bf7488f53d7d0436e",
+          "installed_sha256": "a297639ab712bee5db24e0ecbfdb60d73f515a6a3bfce6d44f71fe7302558879"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/ledger.png",
+          "local_path": "resume-skill/docs/templates/ledger.png",
+          "upstream_sha256": "c8427fb07846ac40e0e81a69f62098b34c95c16902bac4b3b14984ce32cc01f2",
+          "upstream_blob": "d585dee0605d447c43f237be705e62e77717d871",
+          "installed_sha256": "c8427fb07846ac40e0e81a69f62098b34c95c16902bac4b3b14984ce32cc01f2"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/modern-sidebar.png",
+          "local_path": "resume-skill/docs/templates/modern-sidebar.png",
+          "upstream_sha256": "25d261f5250535d198eb193c41df22bb0d85c5c9794ae6620367d5262478bb58",
+          "upstream_blob": "4e270526cef91ab4416b5516da8673e6ca88ee56",
+          "installed_sha256": "25d261f5250535d198eb193c41df22bb0d85c5c9794ae6620367d5262478bb58"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/photo-corporate.png",
+          "local_path": "resume-skill/docs/templates/photo-corporate.png",
+          "upstream_sha256": "8edb15dbe4157979ad6cb41b51341a36431242798e5ed0dbcd98c212e3e333d4",
+          "upstream_blob": "a9413ea4846bbe4d325bfdaa66844ee0ae9a7992",
+          "installed_sha256": "8edb15dbe4157979ad6cb41b51341a36431242798e5ed0dbcd98c212e3e333d4"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/photo-minimal.png",
+          "local_path": "resume-skill/docs/templates/photo-minimal.png",
+          "upstream_sha256": "5769365d534eee564e809eb1721a2e9659a46fbed113ff2d742beb1423f6a1f8",
+          "upstream_blob": "1f0ad26b1adad65284bdd705a12dba43dbe13584",
+          "installed_sha256": "5769365d534eee564e809eb1721a2e9659a46fbed113ff2d742beb1423f6a1f8"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/pillar.png",
+          "local_path": "resume-skill/docs/templates/pillar.png",
+          "upstream_sha256": "c210692e7ec3c318ebe91f669e1be5dd2bb4e4ad20f598fe42ec07d5e57fd26b",
+          "upstream_blob": "acf2e4e622294322c3c565507453bf52ede25a75",
+          "installed_sha256": "c210692e7ec3c318ebe91f669e1be5dd2bb4e4ad20f598fe42ec07d5e57fd26b"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/swiss.png",
+          "local_path": "resume-skill/docs/templates/swiss.png",
+          "upstream_sha256": "8e46de4369227775305190414becc7f5ffb3de993a0857c2d2e10fb95a07aecc",
+          "upstream_blob": "99e77342bdcca6f71f0eed3b3d641d795919dc65",
+          "installed_sha256": "8e46de4369227775305190414becc7f5ffb3de993a0857c2d2e10fb95a07aecc"
+        },
+        {
+          "source_path": "resume-skill/docs/templates/timeline.png",
+          "local_path": "resume-skill/docs/templates/timeline.png",
+          "upstream_sha256": "9abf16cb89d4a344e3278a1ae35c570f5d92e7e176d33192cc75d3beb2baf0c9",
+          "upstream_blob": "57059ef0e868ffa44b58735c2a66e98bc018b05f",
+          "installed_sha256": "9abf16cb89d4a344e3278a1ae35c570f5d92e7e176d33192cc75d3beb2baf0c9"
+        },
+        {
+          "source_path": "resume-skill/docs/zh/.gitkeep",
+          "local_path": "resume-skill/docs/zh/.gitkeep",
+          "upstream_sha256": "d6e8ac6dfe58ad4495ce57320a28cfd4df327a4d241b92a92b07649ddbc8f4ed",
+          "upstream_blob": "3b1736228fc0ef457b65eb00943de6c3f8683cf3",
+          "installed_sha256": "d6e8ac6dfe58ad4495ce57320a28cfd4df327a4d241b92a92b07649ddbc8f4ed"
+        },
+        {
+          "source_path": "resume-skill/guides/writing-tips.md",
+          "local_path": "resume-skill/guides/writing-tips.md",
+          "upstream_sha256": "7041f5dfd048b8f17f2779f6e321532bbcc43b96a3b1e59bf70addea0d6a90e0",
+          "upstream_blob": "b8fbb77534af9d6aad9a92fc74cf7b255f900576",
+          "installed_sha256": "7041f5dfd048b8f17f2779f6e321532bbcc43b96a3b1e59bf70addea0d6a90e0"
+        },
+        {
+          "source_path": "resume-skill/prompts/beautify.md",
+          "local_path": "resume-skill/prompts/beautify.md",
+          "upstream_sha256": "81390312333c26143f2936ae929f8f44e9b98d65a68c88b9fbb211b8adcdae0f",
+          "upstream_blob": "dd2b79e166290c452d30ed543a8f096d65dd3b62",
+          "installed_sha256": "81390312333c26143f2936ae929f8f44e9b98d65a68c88b9fbb211b8adcdae0f"
+        },
+        {
+          "source_path": "resume-skill/prompts/editable-version.md",
+          "local_path": "resume-skill/prompts/editable-version.md",
+          "upstream_sha256": "c000b01d9fce0bfaa5aa863d855bb3866fdce15f4a9006da2a6eb4c510d5540a",
+          "upstream_blob": "b2767d9dd39b8007ec2de3c1e4e50a8e727d30bb",
+          "installed_sha256": "c000b01d9fce0bfaa5aa863d855bb3866fdce15f4a9006da2a6eb4c510d5540a"
+        },
+        {
+          "source_path": "resume-skill/prompts/interview.md",
+          "local_path": "resume-skill/prompts/interview.md",
+          "upstream_sha256": "f50700611cb13bd78ce2857e9cd48991bb737b53381037142d5666fb3d2910ec",
+          "upstream_blob": "ea0d797da0bc945075d67305b836b511c506e405",
+          "installed_sha256": "f50700611cb13bd78ce2857e9cd48991bb737b53381037142d5666fb3d2910ec"
+        },
+        {
+          "source_path": "resume-skill/prompts/linkedin-import.md",
+          "local_path": "resume-skill/prompts/linkedin-import.md",
+          "upstream_sha256": "8951f78c757dd3fbdbe1c3344d8ac506d84502d9a271685ae43b81f6905e60d5",
+          "upstream_blob": "8052790a51fd972cb2bfbb682ad6a45979072e44",
+          "installed_sha256": "8951f78c757dd3fbdbe1c3344d8ac506d84502d9a271685ae43b81f6905e60d5"
+        },
+        {
+          "source_path": "resume-skill/schema/resume-data.md",
+          "local_path": "resume-skill/schema/resume-data.md",
+          "upstream_sha256": "03c87cdf062798635a67b5cad55303d23aad38e8ec78d52f68f5dda20b63421b",
+          "upstream_blob": "9c6ed947636d819a10eaf50d9700fb0504e0730a",
+          "installed_sha256": "03c87cdf062798635a67b5cad55303d23aad38e8ec78d52f68f5dda20b63421b"
+        },
+        {
+          "source_path": "resume-skill/templates/atelier.html",
+          "local_path": "resume-skill/templates/atelier.html",
+          "upstream_sha256": "c289a281999d2d824e13728df8447c62265186d8d6aa1784cb13b142226b114d",
+          "upstream_blob": "7fcd02d6a6da5883cd89554c4ef5c90c94e7ba21",
+          "installed_sha256": "c289a281999d2d824e13728df8447c62265186d8d6aa1784cb13b142226b114d"
+        },
+        {
+          "source_path": "resume-skill/templates/classic-ats.html",
+          "local_path": "resume-skill/templates/classic-ats.html",
+          "upstream_sha256": "0a66a2023069d50a988dc5cf49e4d2c63d27251b70c9ae056d8cae703cdc6e87",
+          "upstream_blob": "de6b2ad28b68fec41c503b2e77abec460a7668ba",
+          "installed_sha256": "0a66a2023069d50a988dc5cf49e4d2c63d27251b70c9ae056d8cae703cdc6e87"
+        },
+        {
+          "source_path": "resume-skill/templates/editorial-banner.html",
+          "local_path": "resume-skill/templates/editorial-banner.html",
+          "upstream_sha256": "b41749d143482d5aed8f99efcbe04bdfc1e3bd11440911461fada6e41b8b2a7f",
+          "upstream_blob": "7f10a951ac916abb853b0ef5a13304af0b06411a",
+          "installed_sha256": "b41749d143482d5aed8f99efcbe04bdfc1e3bd11440911461fada6e41b8b2a7f"
+        },
+        {
+          "source_path": "resume-skill/templates/elegant-serif.html",
+          "local_path": "resume-skill/templates/elegant-serif.html",
+          "upstream_sha256": "e1d790cbacef375b6711622738c7f39309955e3edaaa5108ad61b3e9375a27dd",
+          "upstream_blob": "5a803686f0943fd7c8a2c1c79f0e593f9d426b50",
+          "installed_sha256": "e1d790cbacef375b6711622738c7f39309955e3edaaa5108ad61b3e9375a27dd"
+        },
+        {
+          "source_path": "resume-skill/templates/executive.html",
+          "local_path": "resume-skill/templates/executive.html",
+          "upstream_sha256": "7959687f97e2e32d022cbeafe7194ade3e6f6727b961c46cfa8ee03ae9d7bfae",
+          "upstream_blob": "85decc3fcc706409526dbaf43b5f14e2b557dfc5",
+          "installed_sha256": "7959687f97e2e32d022cbeafe7194ade3e6f6727b961c46cfa8ee03ae9d7bfae"
+        },
+        {
+          "source_path": "resume-skill/templates/ledger.html",
+          "local_path": "resume-skill/templates/ledger.html",
+          "upstream_sha256": "b401dd4217554b9e35e2fc4dff92e6f469e145ae4644b9091f71e4946f185a03",
+          "upstream_blob": "017bb3e6c7bbd75330e583285ad622eae6ed6c07",
+          "installed_sha256": "b401dd4217554b9e35e2fc4dff92e6f469e145ae4644b9091f71e4946f185a03"
+        },
+        {
+          "source_path": "resume-skill/templates/modern-sidebar.html",
+          "local_path": "resume-skill/templates/modern-sidebar.html",
+          "upstream_sha256": "44a4266246686d89ab70d55fc284f10e89fdc377194e65dd444509c428451471",
+          "upstream_blob": "1f47c9c20993cd4ba27984499b71a8c5538c8def",
+          "installed_sha256": "44a4266246686d89ab70d55fc284f10e89fdc377194e65dd444509c428451471"
+        },
+        {
+          "source_path": "resume-skill/templates/photo-corporate.html",
+          "local_path": "resume-skill/templates/photo-corporate.html",
+          "upstream_sha256": "d44ac3d2d0f5da59a054a6410d9c47b11c676a81d41a27df5a4e434ae9f7db8d",
+          "upstream_blob": "6e4cd21361ab97185cc927db912bf087ba77f9be",
+          "installed_sha256": "d44ac3d2d0f5da59a054a6410d9c47b11c676a81d41a27df5a4e434ae9f7db8d"
+        },
+        {
+          "source_path": "resume-skill/templates/photo-minimal.html",
+          "local_path": "resume-skill/templates/photo-minimal.html",
+          "upstream_sha256": "a920c94fc27abcc66aa931fad28dda1eaeb584073e760d8a4e4468c20055a9c2",
+          "upstream_blob": "fe693d0a900e12289134d596ff09445597b57a4e",
+          "installed_sha256": "a920c94fc27abcc66aa931fad28dda1eaeb584073e760d8a4e4468c20055a9c2"
+        },
+        {
+          "source_path": "resume-skill/templates/pillar.html",
+          "local_path": "resume-skill/templates/pillar.html",
+          "upstream_sha256": "db70a173cf0e7155f92c155cde7e33f5a2241b21a80aca3b0cf856aecb3e746b",
+          "upstream_blob": "54193c918d7bfaff4cdf65575ba4bd96b89ace11",
+          "installed_sha256": "db70a173cf0e7155f92c155cde7e33f5a2241b21a80aca3b0cf856aecb3e746b"
+        },
+        {
+          "source_path": "resume-skill/templates/swiss.html",
+          "local_path": "resume-skill/templates/swiss.html",
+          "upstream_sha256": "14253b2be00c6f32047c9640f92de1e167873b245d898ba30177f3f8b16f9ffa",
+          "upstream_blob": "16cc8f2a0d419a47821cde3ab5d043d18a2434bd",
+          "installed_sha256": "14253b2be00c6f32047c9640f92de1e167873b245d898ba30177f3f8b16f9ffa"
+        },
+        {
+          "source_path": "resume-skill/templates/timeline.html",
+          "local_path": "resume-skill/templates/timeline.html",
+          "upstream_sha256": "447f0f51d8461214d01e98d914b1c615704136d31a937530973180984ed2cb2f",
+          "upstream_blob": "f675606e77bbe2ae0640c2a5778acfcbdcf53669",
+          "installed_sha256": "447f0f51d8461214d01e98d914b1c615704136d31a937530973180984ed2cb2f"
+        },
+        {
+          "source_path": "salary-negotiation-skill/.gitignore",
+          "local_path": "salary-negotiation-skill/.gitignore",
+          "upstream_sha256": "72751bfbb52463628ba56c96ddd9a95480a96bd0abc763cd04ad3825ad552c6b",
+          "upstream_blob": "4db4729136f7ee51ac4c095e6826ecad821374e9",
+          "installed_sha256": "72751bfbb52463628ba56c96ddd9a95480a96bd0abc763cd04ad3825ad552c6b"
+        },
+        {
+          "source_path": "salary-negotiation-skill/LICENSE",
+          "local_path": "salary-negotiation-skill/LICENSE",
+          "upstream_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6",
+          "upstream_blob": "8a74ba3e49ce902c880e3bdaaf31fc0978d96036",
+          "installed_sha256": "2870bb9c760365c3767d36fcd79a55dc600d3d451cf030871cb1e636ee3db4e6"
+        },
+        {
+          "source_path": "salary-negotiation-skill/README.md",
+          "local_path": "salary-negotiation-skill/README.md",
+          "upstream_sha256": "cce30df299fa9e6f802041b9edd444ea173ddf98c93fd008a6718c4b2c4fa0a7",
+          "upstream_blob": "2007a831f88460a7abb77c159e3a0c523deaeedf",
+          "installed_sha256": "cce30df299fa9e6f802041b9edd444ea173ddf98c93fd008a6718c4b2c4fa0a7"
+        },
+        {
+          "source_path": "salary-negotiation-skill/README.zh.md",
+          "local_path": "salary-negotiation-skill/README.zh.md",
+          "upstream_sha256": "dbaa49821a4f3af28b08013316a614a90c39df5466a4637a5a31b1883402c75f",
+          "upstream_blob": "fdb9385b77bd464a6d5293047d11978c936f8bc1",
+          "installed_sha256": "dbaa49821a4f3af28b08013316a614a90c39df5466a4637a5a31b1883402c75f"
+        },
+        {
+          "source_path": "salary-negotiation-skill/SKILL.md",
+          "local_path": "salary-negotiation-skill/SKILL.md",
+          "upstream_sha256": "3630a25e938bd587b30af0cad910777ba302fb1cfba942ca039855c91aae0288",
+          "upstream_blob": "5be27c139ad3fcd4cbd1ec845a31703907914930",
+          "installed_sha256": "a6048c114362cd4484665a9140ae03c1c55404611ce8dae06a924dbf5ca95bcb"
+        },
+        {
+          "source_path": "salary-negotiation-skill/deal-bank/_deal-template.md",
+          "local_path": "salary-negotiation-skill/deal-bank/_deal-template.md",
+          "upstream_sha256": "5d297aacc0eafe041cecfe1305069421f7e772af6d0c80ca9a2dff7f5ba2625e",
+          "upstream_blob": "c1f7c8eaa21375411077e130e3522ef7e560dfb0",
+          "installed_sha256": "5d297aacc0eafe041cecfe1305069421f7e772af6d0c80ca9a2dff7f5ba2625e"
+        },
+        {
+          "source_path": "salary-negotiation-skill/deal-bank/_index.md",
+          "local_path": "salary-negotiation-skill/deal-bank/_index.md",
+          "upstream_sha256": "7377e583c26bfcafdd363606e2b4de8c045419d45238bf4e2e9f60d26769aefa",
+          "upstream_blob": "a8e1ba21e4d9336a1f198b5e3e0d7174341d4f06",
+          "installed_sha256": "7377e583c26bfcafdd363606e2b4de8c045419d45238bf4e2e9f60d26769aefa"
+        },
+        {
+          "source_path": "salary-negotiation-skill/examples/negotiation-report-template.html",
+          "local_path": "salary-negotiation-skill/examples/negotiation-report-template.html",
+          "upstream_sha256": "2f0c48540e6d7798ba3a979673dfd56ce6c9579108b6dcce205517873d668adf",
+          "upstream_blob": "479741fc14db5ff39ad9ff522ca28cac8c61d9eb",
+          "installed_sha256": "614401bbdabdd6ea3f409fd4a0435c1f866e0d5600eb6c3a670b711990d3a4af"
+        },
+        {
+          "source_path": "salary-negotiation-skill/frameworks/comp-benchmarks.md",
+          "local_path": "salary-negotiation-skill/frameworks/comp-benchmarks.md",
+          "upstream_sha256": "25452792041e25ea17701b1e4b94f71e20d041b2ec93fab821954e40c6e49a66",
+          "upstream_blob": "76f076a6aee1eb7d859228989be0dc3fc77b295f",
+          "installed_sha256": "25452792041e25ea17701b1e4b94f71e20d041b2ec93fab821954e40c6e49a66"
+        },
+        {
+          "source_path": "salary-negotiation-skill/frameworks/leverage-heuristics.md",
+          "local_path": "salary-negotiation-skill/frameworks/leverage-heuristics.md",
+          "upstream_sha256": "9291888e6ae7183619a8e10af5429a95ed1b125b13cd2e55af2046d78b30d74d",
+          "upstream_blob": "3a3620df98e35f943e468320130ec9fb976ce707",
+          "installed_sha256": "9291888e6ae7183619a8e10af5429a95ed1b125b13cd2e55af2046d78b30d74d"
+        },
+        {
+          "source_path": "salary-negotiation-skill/frameworks/negotiation-report.md",
+          "local_path": "salary-negotiation-skill/frameworks/negotiation-report.md",
+          "upstream_sha256": "4965fbf63d511ae06b85c3916f44f1f44d4b627aadac21d5515ea7e500a1cd41",
+          "upstream_blob": "03ed6cbde5707f41c55823a326184a365021f966",
+          "installed_sha256": "4965fbf63d511ae06b85c3916f44f1f44d4b627aadac21d5515ea7e500a1cd41"
+        },
+        {
+          "source_path": "salary-negotiation-skill/frameworks/negotiation-tactics.md",
+          "local_path": "salary-negotiation-skill/frameworks/negotiation-tactics.md",
+          "upstream_sha256": "f53c796887c223be6a83f681e5636dab523c452fc4e0034e81aac3a84652ff60",
+          "upstream_blob": "9eb2a2f9cc7192303ccaef22f4c992ff1934d987",
+          "installed_sha256": "f53c796887c223be6a83f681e5636dab523c452fc4e0034e81aac3a84652ff60"
+        },
+        {
+          "source_path": "salary-negotiation-skill/frameworks/recruiter-playbook.md",
+          "local_path": "salary-negotiation-skill/frameworks/recruiter-playbook.md",
+          "upstream_sha256": "ba5a3b19220da3cea3f26cb497398c198992e073b01174271002c6f79429a815",
+          "upstream_blob": "f42f99fa4270bea84fa8ca8371b5de097c1f0e4f",
+          "installed_sha256": "ba5a3b19220da3cea3f26cb497398c198992e073b01174271002c6f79429a815"
+        },
+        {
+          "source_path": "salary-negotiation-skill/prompts/counter-simulation.md",
+          "local_path": "salary-negotiation-skill/prompts/counter-simulation.md",
+          "upstream_sha256": "78c01e076f68fcd87f955c3e0ffe2189df84f60e5b0fd48c623f024530bb3652",
+          "upstream_blob": "59dd7129701bc6f370339365b1006bae7e10764a",
+          "installed_sha256": "78c01e076f68fcd87f955c3e0ffe2189df84f60e5b0fd48c623f024530bb3652"
+        },
+        {
+          "source_path": "salary-negotiation-skill/prompts/final-recommendation.md",
+          "local_path": "salary-negotiation-skill/prompts/final-recommendation.md",
+          "upstream_sha256": "1644646d24d80a558795f34887e943ce78143854ed632dc0608e5426bc713f5d",
+          "upstream_blob": "b9c5edbb3f4f2512113bfc5585eb7053df4bf3df",
+          "installed_sha256": "1644646d24d80a558795f34887e943ce78143854ed632dc0608e5426bc713f5d"
+        },
+        {
+          "source_path": "salary-negotiation-skill/prompts/leverage-map.md",
+          "local_path": "salary-negotiation-skill/prompts/leverage-map.md",
+          "upstream_sha256": "1c12407d5a55055ef6322d99be94050bb101d86c6d43c36c79103b1b84d21941",
+          "upstream_blob": "f448172e60825002ab02d5b2df2192834318f52c",
+          "installed_sha256": "1c12407d5a55055ef6322d99be94050bb101d86c6d43c36c79103b1b84d21941"
+        },
+        {
+          "source_path": "salary-negotiation-skill/prompts/negotiation-strategy.md",
+          "local_path": "salary-negotiation-skill/prompts/negotiation-strategy.md",
+          "upstream_sha256": "616301a0dc3372fab714ebbf2d5cc26b4f12d7562b16bee69233a8a54cf10155",
+          "upstream_blob": "8fcfc1d5833aae8ca9cee8bc02a791b00c865e80",
+          "installed_sha256": "616301a0dc3372fab714ebbf2d5cc26b4f12d7562b16bee69233a8a54cf10155"
+        },
+        {
+          "source_path": "salary-negotiation-skill/prompts/offer-diagnosis.md",
+          "local_path": "salary-negotiation-skill/prompts/offer-diagnosis.md",
+          "upstream_sha256": "adbc484a4d61d0ba5f67182d981a696a756dde7c1beed050ea43b9dc129a8e76",
+          "upstream_blob": "39801e52a5996ebacf70d42501444d4addf4b11b",
+          "installed_sha256": "adbc484a4d61d0ba5f67182d981a696a756dde7c1beed050ea43b9dc129a8e76"
+        },
+        {
+          "source_path": "salary-negotiation-skill/prompts/script-generator.md",
+          "local_path": "salary-negotiation-skill/prompts/script-generator.md",
+          "upstream_sha256": "51297bdd2d383381f3816e57c42ff0d20d9b24606e8071c51288e2f7e7541fac",
+          "upstream_blob": "b3c5ecb6757d3121f3ac087abdad9c3b03d073d4",
+          "installed_sha256": "51297bdd2d383381f3816e57c42ff0d20d9b24606e8071c51288e2f7e7541fac"
+        }
+      ],
+      "adaptation_paths": [
+        "SKILL.md",
+        "references/local-workspace.md",
+        "README.md",
+        "README.zh.md",
+        "NOTICE.md",
+        "tools/check_upstreams.py",
+        "tools/migrate_legacy.py",
+        "job-hunt-skill/SKILL.md",
+        "job-description-skill/SKILL.md",
+        "resume-skill/SKILL.md",
+        "bq-skill/SKILL.md",
+        "offer-compare-skill/SKILL.md",
+        "salary-negotiation-skill/SKILL.md"
+      ],
+      "adaptations": [
+        {
+          "path": "SKILL.md",
+          "sha256": "506da12c0fda61bac81d647764aced70844f83b2c4c2d0a127f7b4a480789f14"
+        },
+        {
+          "path": "references/local-workspace.md",
+          "sha256": "0c31594fc2bf81e7c9b60ad1487f17800589160b0e81d00e0b98b4984c9b6ffb"
+        },
+        {
+          "path": "README.md",
+          "sha256": "8505c407493e4406e37d7620addcbc4cb1f3169114c69c60e439f23d4c417b07"
+        },
+        {
+          "path": "README.zh.md",
+          "sha256": "5d6ff850b8f61162111e512c10898c9bd7404eec7f144ec5988d9e5d90638e4f"
+        },
+        {
+          "path": "NOTICE.md",
+          "sha256": "d56242b99d429930ba03a5ca8e88d708ffa2e041fb1e10b64f230352dabfafb8"
+        },
+        {
+          "path": "tools/check_upstreams.py",
+          "sha256": "505e66b941843772ad59929a4ae3707e063e83513e3c24d3b9c0b799550b3ae7"
+        },
+        {
+          "path": "tools/migrate_legacy.py",
+          "sha256": "f8f30fd900c785e776beb22a542820bcb2fa7b7f70e51680cb005113e123cb96"
+        },
+        {
+          "path": "job-hunt-skill/SKILL.md",
+          "sha256": "71908b3f2231d58df85cae037a8b309840b01c2fe37d9dc0569d6676ec482b16"
+        },
+        {
+          "path": "job-description-skill/SKILL.md",
+          "sha256": "c8fd472e1840c15be80a9104a5fe8220117581f489ec160e752ecc4e05223be2"
+        },
+        {
+          "path": "resume-skill/SKILL.md",
+          "sha256": "c43a496f001612c8e9c42c6f109f38ed9537f912cbbd326696500335771f1a16"
+        },
+        {
+          "path": "bq-skill/SKILL.md",
+          "sha256": "a5b15d4b3474a1ad78503ae7697d692606360c3ac8a9bc6a5d081b278fa663bc"
+        },
+        {
+          "path": "offer-compare-skill/SKILL.md",
+          "sha256": "e6197c0b9d6cf1b4a5585b161b635b53148cb336c371daa809402b8c45f75c4c"
+        },
+        {
+          "path": "salary-negotiation-skill/SKILL.md",
+          "sha256": "a6048c114362cd4484665a9140ae03c1c55404611ce8dae06a924dbf5ca95bcb"
+        }
+      ],
+      "adaptation_scope": "Shared local paths, Chinese routing, privacy, legacy compatibility and selective workflow integration; no automatic merging."
+    },
+    {
+      "id": "job",
+      "repository": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "commit": "84808eebc13fa7b781b2ede034120c092776668d",
+      "release": "v1.7.3",
+      "scopes": [
+        ".claude/commands/outcome.md",
+        ".claude/commands/html-report.md",
+        ".claude/commands/interview.md",
+        "documents/README.md",
+        "LICENSE"
+      ],
+      "files": [
+        {
+          "source_path": ".claude/commands/html-report.md",
+          "local_path": "references/upstream/ai-job-search/commands/html-report.md",
+          "upstream_sha256": "36a41dbe56aa48fcea9efef193be68326a1c6752497504bfffdb7757505ca076",
+          "upstream_blob": "ec1e814e77b0ab9ed721f076c185dfaee0f91674",
+          "installed_sha256": "36a41dbe56aa48fcea9efef193be68326a1c6752497504bfffdb7757505ca076"
+        },
+        {
+          "source_path": ".claude/commands/interview.md",
+          "local_path": "references/upstream/ai-job-search/commands/interview.md",
+          "upstream_sha256": "c657a74a56883303a545c21cd406ecc5c1fa7fd6e610c55ba63b11bc8b821dae",
+          "upstream_blob": "831a30608df5196e8fb476901762da5557131cee",
+          "installed_sha256": "c657a74a56883303a545c21cd406ecc5c1fa7fd6e610c55ba63b11bc8b821dae"
+        },
+        {
+          "source_path": ".claude/commands/outcome.md",
+          "local_path": "references/upstream/ai-job-search/commands/outcome.md",
+          "upstream_sha256": "b11641044d71be40fb980f6333c34947cd53cf0573c12e9d6c9c9f7514cfb754",
+          "upstream_blob": "b089479ab60b2d2ac3146250819efb5cd316ec16",
+          "installed_sha256": "b11641044d71be40fb980f6333c34947cd53cf0573c12e9d6c9c9f7514cfb754"
+        },
+        {
+          "source_path": "LICENSE",
+          "local_path": "references/upstream/ai-job-search/LICENSE",
+          "upstream_sha256": "accbf0accb87b7b905dd7ee0c7013075f0453637acf354ddae6fc0e4d8282e8e",
+          "upstream_blob": "dd86a45cbf864dd2cd82df06064cb8cc9aef995a",
+          "installed_sha256": "accbf0accb87b7b905dd7ee0c7013075f0453637acf354ddae6fc0e4d8282e8e"
+        },
+        {
+          "source_path": "documents/README.md",
+          "local_path": "references/upstream/ai-job-search/documents/README.md",
+          "upstream_sha256": "279c78ef70e053d48a203482e8973ce2269a5ac88a26a42b84d46b2765a2c70b",
+          "upstream_blob": "c97f2a7365fa5628b6d5faf75556c93cc0403952",
+          "installed_sha256": "279c78ef70e053d48a203482e8973ce2269a5ac88a26a42b84d46b2765a2c70b"
+        }
+      ],
+      "adaptation_paths": [
+        "SKILL.md",
+        "references/local-workspace.md",
+        "README.md",
+        "README.zh.md",
+        "NOTICE.md",
+        "tools/check_upstreams.py",
+        "tools/migrate_legacy.py",
+        "application-tracker-skill/SKILL.md",
+        "application-tracker-skill/scripts/tracker.py",
+        "tests/test_tracker.py"
+      ],
+      "adaptations": [
+        {
+          "path": "SKILL.md",
+          "sha256": "506da12c0fda61bac81d647764aced70844f83b2c4c2d0a127f7b4a480789f14"
+        },
+        {
+          "path": "references/local-workspace.md",
+          "sha256": "0c31594fc2bf81e7c9b60ad1487f17800589160b0e81d00e0b98b4984c9b6ffb"
+        },
+        {
+          "path": "README.md",
+          "sha256": "8505c407493e4406e37d7620addcbc4cb1f3169114c69c60e439f23d4c417b07"
+        },
+        {
+          "path": "README.zh.md",
+          "sha256": "5d6ff850b8f61162111e512c10898c9bd7404eec7f144ec5988d9e5d90638e4f"
+        },
+        {
+          "path": "NOTICE.md",
+          "sha256": "d56242b99d429930ba03a5ca8e88d708ffa2e041fb1e10b64f230352dabfafb8"
+        },
+        {
+          "path": "tools/check_upstreams.py",
+          "sha256": "505e66b941843772ad59929a4ae3707e063e83513e3c24d3b9c0b799550b3ae7"
+        },
+        {
+          "path": "tools/migrate_legacy.py",
+          "sha256": "f8f30fd900c785e776beb22a542820bcb2fa7b7f70e51680cb005113e123cb96"
+        },
+        {
+          "path": "application-tracker-skill/SKILL.md",
+          "sha256": "b8b825be2177933c709985727267f79b765d50307b12ad70fb98971eedcb3822"
+        },
+        {
+          "path": "application-tracker-skill/scripts/tracker.py",
+          "sha256": "acbb476d4f8d394a6f97897c5980ed335335bebe0456f1825e870443b1170513"
+        },
+        {
+          "path": "tests/test_tracker.py",
+          "sha256": "d52287491e7e99e9514251a2219399e53d25a96383286fce4d0695081765a70e"
+        }
+      ],
+      "adaptation_scope": "Shared local paths, Chinese routing, privacy, legacy compatibility and selective workflow integration; no automatic merging."
+    }
+  ],
+  "legacy_files": [
+    {
+      "repository": "yanliudesign/offer-toolkit-skill",
+      "commit": "0c671af3d96cda144e4ff28179f818d92d0faa6e",
+      "source_path": "resume-skill/templates/tech-compact.html",
+      "local_path": "resume-skill/templates/tech-compact.html",
+      "reason": "Retained legacy template removed by newer upstream; never delete automatically",
+      "upstream_sha256": "8e4d3182ca56ed81022e2e42641a3b559ec6f2ecfe17d99c20db59cc5f562dd1",
+      "installed_sha256": "8e4d3182ca56ed81022e2e42641a3b559ec6f2ecfe17d99c20db59cc5f562dd1",
+      "upstream_blob": "12508761f55df003717b60dcf1f99c8e4910829f"
+    },
+    {
+      "repository": "yanliudesign/offer-toolkit-skill",
+      "commit": "0c671af3d96cda144e4ff28179f818d92d0faa6e",
+      "source_path": "resume-skill/docs/templates/tech-compact.png",
+      "local_path": "resume-skill/docs/templates/tech-compact.png",
+      "reason": "Retained legacy template removed by newer upstream; never delete automatically",
+      "upstream_sha256": "ab7281338b7b774a05dabd57f7b805b6fc0ea586375918928589a2ea3f9d9b4e",
+      "installed_sha256": "ab7281338b7b774a05dabd57f7b805b6fc0ea586375918928589a2ea3f9d9b4e",
+      "upstream_blob": "f7b284b039476207940b940c4a0874281bfabf88"
+    }
+  ]
+}

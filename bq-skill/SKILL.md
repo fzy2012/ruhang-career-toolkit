@@ -3,6 +3,11 @@ name: bq-skill
 description: "行为面试 skill。帮求职者挖掘真实经历、用 STAR/CAR 结构化、映射能力标签、构建可复用的中英双语故事库（Story Bank）；并能接入 JD + 简历，针对具体岗位生成 Top 20 BQ 选题 + 基于真实经历的 STAR 准备模板（HTML 报告）。不是背答案，而是建立可复用的职业叙事体系，让任何行为面试题都能自然作答。关键词：behavioral question, BQ, 行为面试, STAR, 故事库, Amazon LP, 职业故事, tell me about a time, 面试准备, JD 面试题预测, top 20 题。"
 ---
 
+## 入行本地执行约定
+
+执行前读取 [本地资料与衔接规则](../references/local-workspace.md)。本文中的作者默认输出路径和各 bank 写入位置统一映射到该规则指定的数据根；源目录只读模板与示例，个人索引不得写回源目录。阶段间直接复用已有资料。实际投递和结果通过 [投递管理](../application-tracker-skill/SKILL.md) 记录，报告生成不代表已投递。此适配约定优先于下文上游原有路径示例。
+
+
 # BQ Skill
 
 把"会回答某道 BQ"升级成"拥有一套可复用的职业故事库"。核心循环：

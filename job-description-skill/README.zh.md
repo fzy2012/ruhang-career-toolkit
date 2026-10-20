@@ -21,7 +21,7 @@
 
 </div>
 
-> 📦 属于 **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** 求职工具包 — 装工具包等于一次性拿到 JD · Resume · BQ 三条子 skill。
+> 📦 属于 **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** 求职工具包 — 装工具包等于一次性拿到 Search · JD · Resume · BQ · Compare · Negotiate 六条子 skill。
 
 一个专门读 JD 的 Claude skill。贴一份 JD 和你的简历，它给你一份 HTML 报告，告诉你：这岗位到底该不该投、你和它多匹配、差在哪里、面试大概会问什么、薪资合不合理、接下来 6 周该做什么。一份 JD 不只是招聘文案——它一般是招聘经理的真实期望包在 HR 模板里，这个 skill 把它拆开。
 
@@ -48,7 +48,7 @@
 
 Wizard 跑完的默认交付物是一份单文件 HTML 报告，存到 `~/Desktop/Claude skills/offer-strategy-<slug>.html`。固定 10 节骨架 + TL;DR 预头 + 关键指标仪表：
 
-![Offer Strategy Report 预览](docs/report-preview-zh.png)
+![Offer Strategy Report 预览](docs/report-preview-zh-v2.png)
 
 *一份真实报告的顶部 — Verdict + Assumptions + TL;DR + 两个仪表，右下角是页内的导出 PDF / Markdown 按钮。*
 
@@ -124,7 +124,8 @@ job-description-skill/
 ---
 
 ## 配套 skill
-- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — 三件套（JD · Resume · BQ）
+- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — 六件套（Search · JD · Resume · BQ · Compare · Negotiate）
+- [job-hunt-skill](https://github.com/yanliudesign/job-hunt-skill) — 岗位发现与可搜索职位清单
 - [resume-builder-skill](https://github.com/yanliudesign/resume-builder-skill) — 简历生成与美化
 - [Behavior-question-skill](https://github.com/yanliudesign/Behavior-question-skill) — 行为面试 / 职业故事库
 

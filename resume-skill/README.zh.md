@@ -6,11 +6,11 @@
 
 ---
 
-**一份简历数据，十一套打印级模板。**
+**一份简历数据，十二套打印级模板。**
 
 [![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
-[![Templates](https://img.shields.io/badge/TEMPLATES-11-2ea44f?style=flat-square&labelColor=333)]()
+[![Templates](https://img.shields.io/badge/TEMPLATES-12-2ea44f?style=flat-square&labelColor=333)]()
 [![Stars](https://img.shields.io/github/stars/yanliudesign/resume-builder-skill?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/resume-builder-skill/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -21,11 +21,11 @@
 
 </div>
 
-> 📦 属于 **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** 求职工具包 — 装工具包等于一次性拿到 JD · Resume · BQ 三条子 skill。
+> 📦 属于 **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** 求职工具包 — 装工具包等于一次性拿到 Search · JD · Resume · BQ · Compare · Negotiate 六条子 skill。
 
-一个 agent skill：帮你把现有简历改好看、从 LinkedIn 导入、或者聊着聊着帮你从零写一份。所有素材先汇入一份标准结构化数据，再套模板渲染成 13 套打印级模板之一——换模板只是换皮，内容不丢。
+一个 agent skill：帮你把现有简历改好看、从 LinkedIn 导入、或者聊着聊着帮你从零写一份。所有素材先汇入一份标准结构化数据，再套模板渲染成 12 套打印级模板之一——换模板只是换皮，内容不丢。
 
-![一份数据 schema 渲染出的十一套打印优化模板](docs/preview.png)
+![一份数据 schema 渲染出的十二套打印优化模板](docs/preview.png)
 
 <sub>更多截图：[中文相册](docs/zh/) · [English gallery](docs/en/)</sub>
 
@@ -41,13 +41,12 @@
 
 三条入口最终都把数据汇入 [`schema/resume-data.md`](schema/resume-data.md),再套模板渲染。
 
-## 13 套模板
+## 12 套模板
 
 | 预览 | 模板 | 适合 |
 |:---:|---|---|
 | <img src="docs/templates/classic-ats.png" width="300"> | **Classic / ATS**<br>[`classic-ats.html`](templates/classic-ats.html) | 单栏无花哨,机器可解析,大公司海投最稳 |
 | <img src="docs/templates/ledger.png" width="300"> | **Ledger 学术工程**<br>[`ledger.html`](templates/ledger.html) | LaTeX 风衬线,两端对齐,嵌套子弹,软件/数据/工程岗 |
-| <img src="docs/templates/tech-compact.png" width="300"> | **Tech 紧凑**<br>[`tech-compact.html`](templates/tech-compact.html) | 高信息密度+等宽点缀,多项目塞一页 |
 | <img src="docs/templates/modern-sidebar.png" width="300"> | **Modern 侧栏**<br>[`modern-sidebar.html`](templates/modern-sidebar.html) | 双栏+深色侧边栏,现代感强 |
 | <img src="docs/templates/pillar.png" width="300"> | **Pillar 信息卡**<br>[`pillar.html`](templates/pillar.html) | Enhancv 风,蓝点缀+技能胶囊+图标成就,产品/市场/PM |
 | <img src="docs/templates/elegant-serif.png" width="300"> | **Elegant 衬线**<br>[`elegant-serif.html`](templates/elegant-serif.html) | 衬线居中编辑风,设计/咨询/市场 |
@@ -102,11 +101,12 @@ resume-skill/
 │   ├── interview.md               # 入口 C:对话式采集脚本
 │   └── editable-version.md        # 把任何渲染成品升级为点击即改页面的注入片段
 ├── guides/writing-tips.md         # bullet 写法、量化、ATS 关键词、常见错误
-└── templates/                     # 13 套打印优化 HTML 模板
+└── templates/                     # 12 套打印优化 HTML 模板
 ```
 
 ## 配套 skill
-- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — 三件套（JD · Resume · BQ）
+- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — 六件套（Search · JD · Resume · BQ · Compare · Negotiate）
+- [job-hunt-skill](https://github.com/yanliudesign/job-hunt-skill) — 岗位发现与可搜索职位清单
 - [job-description-skill](https://github.com/yanliudesign/job-description-skill) — JD 解码 + Offer 策略
 - [Behavior-question-skill](https://github.com/yanliudesign/Behavior-question-skill) — 行为面试 / 职业故事库
 

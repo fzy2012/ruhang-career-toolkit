@@ -1,6 +1,6 @@
 interface:
   display_name: "入行 Career Toolkit"
-  short_description: "从 JD 判断到简历和行为面试的本地求职工作台"
+  short_description: "从岗位发现到谈薪，连接六阶段准备、投递归档与结果复盘的本地求职工作台"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#7C3AED"

@@ -38,3 +38,8 @@ bq-skill/story-bank/*.md
 *.mov
 *.avi
 *.mkv
+
+# 入行本地资料、验收和运行缓存（不进入源码发布）
+.career-data/
+__pycache__/
+*.pyc

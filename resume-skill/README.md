@@ -6,11 +6,11 @@
 
 ---
 
-**One resume data schema, eleven print-ready templates.**
+**One resume data schema, twelve print-ready templates.**
 
 [![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
-[![Templates](https://img.shields.io/badge/TEMPLATES-11-2ea44f?style=flat-square&labelColor=333)]()
+[![Templates](https://img.shields.io/badge/TEMPLATES-12-2ea44f?style=flat-square&labelColor=333)]()
 [![Stars](https://img.shields.io/github/stars/yanliudesign/resume-builder-skill?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/resume-builder-skill/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -21,11 +21,11 @@
 
 </div>
 
-> 📦 Part of the **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** — the full job-hunt bundle (JD · Resume · BQ). Install the bundle to get all three in one shot.
+> 📦 Part of the **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** — the full job-hunt bundle (Search · JD · Resume · BQ · Compare · Negotiate). Install the bundle to get all six in one shot.
 
-An agent skill that polishes an existing resume, pulls one in from LinkedIn, or builds one from scratch by chatting with you. Every input funnels through one standardized data schema and then renders into any of 13 print-ready templates — switching templates is just a skin change, the content stays the same.
+An agent skill that polishes an existing resume, pulls one in from LinkedIn, or builds one from scratch by chatting with you. Every input funnels through one standardized data schema and then renders into any of 12 print-ready templates — switching templates is just a skin change, the content stays the same.
 
-![Thirteen print-ready resume templates rendered from one data schema](docs/preview.png)
+![Twelve print-ready resume templates rendered from one data schema](docs/preview.png)
 
 <sub>More screenshots: [English gallery](docs/en/) · [中文相册](docs/zh/)</sub>
 
@@ -41,13 +41,12 @@ An agent skill that polishes an existing resume, pulls one in from LinkedIn, or 
 
 All three funnel into [`schema/resume-data.md`](schema/resume-data.md), then render through a template.
 
-## Thirteen templates
+## Twelve templates
 
 | Preview | Template | Best for |
 |:---:|---|---|
 | <img src="docs/templates/classic-ats.png" width="300"> | **Classic / ATS**<br>[`classic-ats.html`](templates/classic-ats.html) | Single-column, machine-parseable, safest for mass applications |
 | <img src="docs/templates/ledger.png" width="300"> | **Ledger**<br>[`ledger.html`](templates/ledger.html) | LaTeX-style serif, justified, nested bullets — SWE / data / eng |
-| <img src="docs/templates/tech-compact.png" width="300"> | **Tech Compact**<br>[`tech-compact.html`](templates/tech-compact.html) | High density + mono accents, fits many projects on one page |
 | <img src="docs/templates/modern-sidebar.png" width="300"> | **Modern Sidebar**<br>[`modern-sidebar.html`](templates/modern-sidebar.html) | Two-column with dark sidebar, modern feel |
 | <img src="docs/templates/pillar.png" width="300"> | **Pillar**<br>[`pillar.html`](templates/pillar.html) | Enhancv-style, blue accents + skill chips + icon achievements — PM / marketing |
 | <img src="docs/templates/elegant-serif.png" width="300"> | **Elegant Serif**<br>[`elegant-serif.html`](templates/elegant-serif.html) | Centered editorial serif — design / consulting / marketing |
@@ -102,11 +101,12 @@ resume-skill/
 │   ├── interview.md               # Entry C: conversational collection
 │   └── editable-version.md        # Injection snippet that upgrades any render into a click-to-edit page
 ├── guides/writing-tips.md         # Bullet craft, quantification, ATS keywords, common mistakes
-└── templates/                     # 13 print-optimized HTML templates
+└── templates/                     # 12 print-optimized HTML templates
 ```
 
 ## Related skills
-- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — the all-in-one bundle (JD · Resume · BQ)
+- [offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill) — the all-in-one bundle (Search · JD · Resume · BQ · Compare · Negotiate)
+- [job-hunt-skill](https://github.com/yanliudesign/job-hunt-skill) — Job discovery and searchable opportunity list
 - [job-description-skill](https://github.com/yanliudesign/job-description-skill) — Job Description Decoder
 - [Behavior-question-skill](https://github.com/yanliudesign/Behavior-question-skill) — Behavioral interview / story bank
 
